@@ -83,12 +83,12 @@
 </body>
 
 <script>
-  const PORT = 59652;
+  const PORT = 59650;
   let app = new Vue({
     el: '#app',
     data: {
       connectionStatus: 'disconnected',
-      url: 'http://' + location.hostname + ':59652/api',
+      url: `http://${location.hostname}:${PORT}/api`,
       scenes: [],
       sources: [],
       nextRequestId: 1,
