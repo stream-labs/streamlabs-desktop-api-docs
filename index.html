@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slobs client example</title>
+  <script src="node_modules/vue/dist/vue.js"></script>
+  <script src="node_modules/sockjs-client/dist/sockjs.js"></script>
+  <script src="node_modules/renderjson/renderjson.js"></script>
+</head>
+<body>
+
+<div id="app">
+
+
+  <div class="header">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="url" v-model="url">
+      <span  class="input-group-addon">
+        <span v-if="connectionStatus == 'disconnected'" @click="connect">Connect</span>
+        <span v-if="connectionStatus == 'pending'">Connecting...</span>
+        <span v-if="connectionStatus == 'connected'" style="color: green">Connected</span>
+      </span>
+    </div>
+  </div>
+
+
+
+  <ul class="nav">
+    <li :class="{active: page == 'scenes'}" @click="page = 'scenes'">
+      Scenes
+    </li>
+    <li :class="{active: page == 'console'}" @click="page = 'console'">
+      Console
+    </li>
+  </ul>
+
+
+  <div v-show="page == 'scenes'">
+    <div class="scenes" >
+      <div
+          class="scene"
+          :class="{active: scene.isActive}"
+          v-for="scene in scenes"
+          @click="switchScene(scene.id)"
+      >
+        {{ scene.name }}
+      </div>
+    </div>
+
+    <div class="sources">
+      <div
+          class="source"
+          v-for="source in sources"
+          @click="setMuted(source.sourceId, !source.muted)"
+          :class="{ active: !source.muted }"
+      >
+        <span class="glyphicon"
+              :class="{'glyphicon-volume-off': source.muted, 'glyphicon-volume-up': !source.muted}">
+
+        </span>
+        <span class="name">{{ source.name }}</span>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  
+  <div class="console" v-show="page == 'console'">
+    <textarea name="" id="" cols="30" rows="10" v-model="requestString"></textarea>
+    <div class="text-right buttons">
+      <button type="button" class="btn btn-default" @click="resetRequestString">Reset</button>
+      <button type="button" class="btn btn-default" @click="clearLog">Clear Log</button>
+      <button type="button" class="btn btn-primary" @click="sendMessage(requestString)">Send</button>
+    </div>
+    <div class="messages" ref="messages"></div>
+  </div>
+
+</div>
+
+</body>
+
+<script>
+  const PORT = 59652;
+  let app = new Vue({
+    el: '#app',
+    data: {
+      connectionStatus: 'disconnected',
+      url: 'http://' + location.hostname + ':59652/api',
+      scenes: [],
+      sources: [],
+      nextRequestId: 1,
+      requests: {},
+      subscriptions: {},
+      socket: null,
+      page: 'scenes',
+      requestString: ''
+    },
+
+    mounted() {
+      this.connect();
+      this.resetRequestString();
+    },
+
+    methods: {
+      connect() {
+        if (this.connectionStatus !== 'disconnected') return;
+        this.connectionStatus = 'pending';
+        this.socket = new SockJS(this.url);
+
+        this.socket.onopen = () => {
+          console.log('open');
+          this.onConnectionHandler();
+        };
+
+        this.socket.onmessage = (e) => {
+          this.onMessageHandler(e.data);
+          this.logMessage(e.data.toString(), 'response');
+        };
+
+
+        this.socket.onclose = (e) => {
+          this.connectionStatus = 'disconnected';
+          alert(e.reason || 'disconnected');
+          console.log('close', e);
+        };
+      },
+
+
+      onConnectionHandler() {
+        this.connectionStatus = 'connected';
+
+        this.request('ScenesService', 'getScenes').then(scenes => {
+          scenes.forEach(scene => this.addScene(scene));
+        });
+
+        this.request('ScenesService', 'activeSceneId').then(id => {
+          const scene = this.scenes.find(scene => scene.id === id);
+          scene.isActive = true;
+          this.onSceneSwitchedHandler(scene);
+        });
+
+        this.subscribe('ScenesService', 'sceneSwitched', activeScene => {
+          this.onSceneSwitchedHandler(activeScene);
+        });
+
+        this.subscribe('ScenesService', 'sceneAdded', scene => {
+          this.addScene(scene);
+        });
+
+        this.subscribe('ScenesService', 'sceneRemoved', scene => {
+          this.removeScene(scene.id);
+        });
+
+        this.subscribe('SourcesService', 'sourceUpdated', source => {
+          this.onSourceUpdatedHandler(source);
+        });
+      },
+
+
+      request(resourceId, methodName, ...args) {
+        let id = this.nextRequestId++;
+        let requestBody = {
+          jsonrpc: '2.0',
+          id,
+          method: methodName,
+          params: { resource: resourceId, args }
+        };
+
+        return this.sendMessage(requestBody);
+      },
+
+
+      sendMessage(message) {
+        let requestBody = message;
+        if (typeof message === 'string') {
+          try {
+            requestBody = JSON.parse(message);
+          } catch (e) {
+            alert('Invalid JSON');
+            return;
+          }
+        }
+
+        if (!requestBody.id) {
+          alert('id is required');
+          return;
+        }
+
+        this.logMessage(requestBody, 'request');
+
+        return new Promise((resolve, reject) => {
+          this.requests[requestBody.id] = {
+            body: requestBody,
+            resolve,
+            reject,
+            completed: false
+          };
+          this.socket.send(JSON.stringify(requestBody));
+        });
+      },
+
+
+      onMessageHandler(data) {
+        let message = JSON.parse(data);
+        let request = this.requests[message.id];
+
+        if (request) {
+          if (message.error) {
+            request.reject(message.error);
+          } else {
+            request.resolve(message.result);
+          }
+          delete this.requests[message.id];
+        }
+
+        const result = message.result;
+        if (!result) return;
+
+        if (result._type === 'EVENT') {
+          this.subscriptions[message.result.resourceId](result.data);
+        }
+
+      },
+
+
+      subscribe(resourceId, channelName, cb) {
+        this.request(resourceId, channelName).then(subscriptionInfo => {
+          this.subscriptions[subscriptionInfo.resourceId] = cb;
+        });
+      },
+
+
+      addScene(scene) {
+        this.scenes.push({...scene, isActive: false });
+      },
+
+      removeScene(sceneId) {
+        this.scenes.splice(this.scenes.findIndex(scene => scene.id == sceneId), 1);
+      },
+
+      switchScene(sceneId) {
+        this.request('ScenesService', 'makeSceneActive', sceneId);
+      },
+
+      setMuted(sourceId, isMuted) {
+        this.request('SourcesService', 'setMuted', sourceId, isMuted);
+      },
+
+      onSceneSwitchedHandler(activeScene) {
+        this.scenes.forEach(scene => {
+          scene.isActive = scene.id === activeScene.id;
+        });
+        this.request('AudioService', 'getSourcesForCurrentScene').then(sources => this.sources = sources);
+      },
+
+
+      onSourceUpdatedHandler(sourceModel) {
+        const source = this.sources.find(source => source.sourceId === sourceModel.sourceId);
+        source.muted = sourceModel.muted;
+      },
+
+
+      resetRequestString() {
+        this.requestString = JSON.stringify({
+          jsonrpc: '2.0',
+          id: this.nextRequestId++,
+          method: 'getSources',
+          params: { resource: 'SourcesService', args: [] }
+        }, null, 2);
+      },
+
+
+      logMessage(data, type) {
+        let jsonObj = (typeof data === 'string') ? JSON.parse(data) : data;
+        console.log(type, jsonObj);
+        const $messages = this.$refs.messages;
+        const $message = document.createElement(`div`);
+        $message.className = `message ${type}`;
+        $message.appendChild(renderjson(jsonObj));
+        $messages.appendChild($message);
+        // open the first node
+        $message.querySelector('.disclosure').dispatchEvent(new Event('click'));
+        $messages.scrollTop = Number.MAX_SAFE_INTEGER;
+      },
+
+      clearLog() {
+        this.$refs.messages.innerHTML = '';
+      }
+
+    }
+  })
+</script>
+<style>
+
+  @import 'node_modules/bootstrap/dist/css/bootstrap.css';
+
+  body {
+    background: #050F14;
+    color: #919191;
+  }
+
+  .form-control {
+    background-color: black;
+    color: #919191;
+    border: none;
+  }
+
+  button, .button, .input-group-addon {
+    background-color: #0b2c29;
+    border: none;
+  }
+
+  .nav {
+    background-color: #0b2c29;
+    height: 50px;
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .nav li {
+    line-height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: default;
+    font-size: 16px;
+  }
+
+  .nav .active {
+    background-color: #2e4f5f;
+    color: white;
+  }
+
+  .nav :hover {
+    background-color: #2e4f5f;
+  }
+
+
+  .header {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 40px;
+  }
+
+  .header .input-group {
+    width: 340px;
+  }
+
+  .connect-form {
+    flex-direction: row-reverse;
+    padding-right: 5px;
+  }
+
+  .form-control.url {
+    width: 230px;
+  }
+
+  nav {
+    margin-bottom: 10px;
+  }
+
+  .sources {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .source {
+    position: relative;
+    background-color: #0F1F27;
+    width: 150px;
+    height: 150px;
+    border-radius: 2px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .source.active {
+    color: white;
+  }
+
+  .source .glyphicon {
+    font-size: 100px;
+    padding-top: 20px;
+  }
+
+  .source .name {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+    overflow: hidden;
+  }
+
+  .scene {
+    position: relative;
+    padding: 20px;
+    margin: 5px;
+    color: #919191;
+    background-color: #0F1F27;
+  }
+
+  .scene.active {
+    color: white;
+    background-color: #2e4f5f;
+  }
+
+  .console textarea {
+    width: 100%;
+    background-color: black;
+    color: #919191;
+    font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    border: black;
+  }
+
+  .buttons {
+    padding: 10px;
+  }
+
+  .messages {
+    position: absolute;
+    top: 370px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    box-shadow: inset 0 0 10px black;
+  }
+
+  .message pre {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #09161d;
+    color: #919191;
+    border: none;
+    font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .message.request pre::before {
+    content: 'request';
+    display: block;
+    color: green;
+  }
+
+  .message.response pre::before {
+    content: 'response';
+    display: block;
+    color: lightblue;
+  }
+
+</style>
+</html>
