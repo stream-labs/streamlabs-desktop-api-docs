@@ -71,8 +71,8 @@
   <div class="console" v-show="page == 'console'">
     <textarea name="" id="" cols="30" rows="10" v-model="requestString"></textarea>
     <div class="text-right buttons">
-      <button type="button" class="btn btn-default" @click="resetRequestString">Reset</button>
-      <button type="button" class="btn btn-default" @click="clearLog">Clear Log</button>
+      <button type="button" class="btn btn-primary" @click="resetRequestString">Reset</button>
+      <button type="button" class="btn btn-primary" @click="clearLog">Clear Log</button>
       <button type="button" class="btn btn-primary" @click="sendMessage(requestString)">Send</button>
     </div>
     <div class="messages" ref="messages"></div>
