@@ -13,55 +13,77 @@
 <div id="app">
 
 
-  <div class="header">
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="url" v-model="url">
-      <span  class="input-group-addon">
+  <div v-if="topPanelIsVisible">
+    <div class="header">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="url" v-model="url">
+        <span  class="input-group-addon">
         <span v-if="connectionStatus == 'disconnected'" @click="connect">Connect</span>
         <span v-if="connectionStatus == 'pending'">Connecting...</span>
         <span v-if="connectionStatus == 'connected'" style="color: green">Connected</span>
       </span>
+      </div>
     </div>
+
+
+
+    <ul class="nav">
+      <li :class="{active: page == 'scenes'}" @click="page = 'scenes'">
+        Scenes
+      </li>
+      <li :class="{active: page == 'console'}" @click="page = 'console'">
+        Console
+      </li>
+      <li @click="topPanelIsVisible = false">
+        Hide Panel
+      </li>
+    </ul>
   </div>
 
 
 
-  <ul class="nav">
-    <li :class="{active: page == 'scenes'}" @click="page = 'scenes'">
-      Scenes
-    </li>
-    <li :class="{active: page == 'console'}" @click="page = 'console'">
-      Console
-    </li>
-  </ul>
-
 
   <div v-show="page == 'scenes'">
-    <div class="scenes" >
+
+
+    <div class="deck">
+
       <div
-          class="scene"
+          class="scene deck-button"
           :class="{active: scene.isActive}"
           v-for="scene in scenes"
           @click="switchScene(scene.id)"
       >
-        {{ scene.name }}
+        <span class="glyphicon glyphicon-picture"></span>
+        <span class="name">{{ scene.name }}</span>
       </div>
-    </div>
 
-    <div class="sources">
+
       <div
-          class="source"
-          v-for="source in sources"
+          class="scene-item deck-button"
+          v-for="item in sceneItems"
+          :class="{ active: item.visible }"
+          @click="toggleSceneItem(item)"
+      >
+        <span class="glyphicon glyphicon-play"></span>
+        <span class="name">{{ item.name }}</span>
+      </div>
+
+
+      <div
+          class="audio-source deck-button"
+          v-for="source in audioSources"
           @click="setMuted(source.sourceId, !source.muted)"
           :class="{ active: !source.muted }"
       >
         <span class="glyphicon"
               :class="{'glyphicon-volume-off': source.muted, 'glyphicon-volume-up': !source.muted}">
-
         </span>
         <span class="name">{{ source.name }}</span>
-
       </div>
+
+
+
     </div>
 
   </div>
@@ -90,13 +112,15 @@
       connectionStatus: 'disconnected',
       url: `http://${location.hostname}:${PORT}/api`,
       scenes: [],
-      sources: [],
+      audioSources: [],
+      sceneItems: [],
       nextRequestId: 1,
       requests: {},
       subscriptions: {},
       socket: null,
       page: 'scenes',
-      requestString: ''
+      requestString: '',
+      topPanelIsVisible: true
     },
 
     mounted() {
@@ -156,6 +180,10 @@
 
         this.subscribe('SourcesService', 'sourceUpdated', source => {
           this.onSourceUpdatedHandler(source);
+        });
+
+        this.subscribe('ScenesService', 'itemUpdated', scenItem => {
+          this.onSceneItemUpdateHandler(scenItem);
         });
       },
 
@@ -249,19 +277,30 @@
         this.request('SourcesService', 'setMuted', sourceId, isMuted);
       },
 
-      onSceneSwitchedHandler(activeScene) {
+      toggleSceneItem(sceneItem) {
+        this.request(sceneItem.resourceId, 'setVisibility', !sceneItem.visible);
+      },
+
+      onSceneSwitchedHandler(activeSceneModel) {
+        let activeScene = null;
         this.scenes.forEach(scene => {
-          scene.isActive = scene.id === activeScene.id;
+          scene.isActive = scene.id === activeSceneModel.id;
+          if (scene.isActive) activeScene = scene;
         });
-        this.request('AudioService', 'getSourcesForCurrentScene').then(sources => this.sources = sources);
+        this.request('AudioService', 'getSourcesForCurrentScene').then(sources => this.audioSources = sources);
+        this.request(activeScene.resourceId, 'getItems').then(items => this.sceneItems = items);
       },
 
 
       onSourceUpdatedHandler(sourceModel) {
-        const source = this.sources.find(source => source.sourceId === sourceModel.sourceId);
+        let source = this.audioSources.find(source => source.sourceId === sourceModel.sourceId);
         source.muted = sourceModel.muted;
       },
 
+      onSceneItemUpdateHandler(sceneItemModel) {
+        let sceneItem = this.sceneItems.find(sceneItem => sceneItem.sceneItemId === sceneItemModel.sceneItemId);
+        Object.assign(sceneItem, sceneItemModel);
+      },
 
       resetRequestString() {
         this.requestString = JSON.stringify({
@@ -298,7 +337,7 @@
   @import 'node_modules/bootstrap/dist/css/bootstrap.css';
 
   body {
-    background: #050F14;
+    background: #141418;
     color: #919191;
   }
 
@@ -361,50 +400,54 @@
     margin-bottom: 10px;
   }
 
-  .sources {
+  .deck {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .source {
+  .deck-button {
     position: relative;
-    background-color: #0F1F27;
-    width: 150px;
-    height: 150px;
-    border-radius: 2px;
+    background: linear-gradient(to bottom, #3E5C5C, #152020);
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border: 3px solid #19181C;
     margin: 10px;
+    font-size: 12px;
     text-align: center;
   }
 
-  .source.active {
-    color: white;
-  }
 
-  .source .glyphicon {
-    font-size: 100px;
+  .deck-button .glyphicon {
+    font-size: 50px;
     padding-top: 20px;
   }
 
-  .source .name {
+
+  .deck-button.active {
+    color: white;
+    background: linear-gradient(to bottom, #517878, #243636);
+  }
+
+
+  .deck-button .name {
     display: block;
     width: 100%;
     position: absolute;
     bottom: 5px;
     overflow: hidden;
+    white-space: nowrap;
   }
 
-  .scene {
-    position: relative;
-    padding: 20px;
-    margin: 5px;
-    color: #919191;
-    background-color: #0F1F27;
+  .deck-button.scene-item,
+  .deck-button.audio-source {
+    background: linear-gradient(to bottom, #0096C0, #00386C);
   }
 
-  .scene.active {
-    color: white;
-    background-color: #2e4f5f;
+  .deck-button.scene-item.active,
+  .deck-button.audio-source.active {
+    background: linear-gradient(to bottom, #00C7F8, #006BD1);
   }
 
   .console textarea {
