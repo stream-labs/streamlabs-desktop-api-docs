@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Slobs client example</title>
-  <script src="node_modules/vue/dist/vue.js"></script>
-  <script src="node_modules/sockjs-client/dist/sockjs.js"></script>
-  <script src="node_modules/renderjson/renderjson.js"></script>
+  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+  <script src="vendor/vue.js"></script>
+  <script src="vendor/sockjs.js"></script>
+  <script src="vendor/renderjson.js"></script>
 </head>
 <body>
 
@@ -54,7 +55,7 @@
           v-for="scene in scenes"
           @click="switchScene(scene.id)"
       >
-        <span class="glyphicon glyphicon-picture"></span>
+        <span class="fa fa-picture-o"></span>
         <span class="name">{{ scene.name }}</span>
       </div>
 
@@ -65,7 +66,7 @@
           :class="{ active: item.visible }"
           @click="toggleSceneItem(item)"
       >
-        <span class="glyphicon glyphicon-play"></span>
+        <span class="fa fa-play"></span>
         <span class="name">{{ item.name }}</span>
       </div>
 
@@ -76,8 +77,8 @@
           @click="setMuted(source.sourceId, !source.muted)"
           :class="{ active: !source.muted }"
       >
-        <span class="glyphicon"
-              :class="{'glyphicon-volume-off': source.muted, 'glyphicon-volume-up': !source.muted}">
+        <span class="fa"
+              :class="{'fa-volume-off': source.muted, 'fa-volume-up': !source.muted}">
         </span>
         <span class="name">{{ source.name }}</span>
       </div>
@@ -110,7 +111,7 @@
     el: '#app',
     data: {
       connectionStatus: 'disconnected',
-      url: `http://${location.hostname}:${PORT}/api`,
+      url: `http://127.0.0.1:${PORT}/api`, //`http://${location.hostname}:${PORT}/api`,
       scenes: [],
       audioSources: [],
       sceneItems: [],
@@ -124,7 +125,6 @@
     },
 
     mounted() {
-      this.connect();
       this.resetRequestString();
     },
 
@@ -334,7 +334,7 @@
 </script>
 <style>
 
-  @import 'node_modules/bootstrap/dist/css/bootstrap.css';
+  @import 'vendor/bootstrap.css';
 
   body {
     background: #141418;
@@ -350,6 +350,11 @@
   button, .button, .input-group-addon {
     background-color: #0b2c29;
     border: none;
+    cursor: default;
+  }
+
+  .input-group-addon:hover {
+    color: white;
   }
 
   .nav {
@@ -419,7 +424,7 @@
   }
 
 
-  .deck-button .glyphicon {
+  .deck-button .fa {
     font-size: 50px;
     padding-top: 20px;
   }
