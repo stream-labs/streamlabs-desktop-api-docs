@@ -36,13 +36,13 @@
         Console
       </li>
       <li>
-        <a href="https://github.com/holiber/slobs-client-example#how-to-use" target="_blank">How to use</a>
+        <a href="https://github.com/holiber/slobs-client-example#how-to-use" target="_blank">Docs</a>
       </li>
       <li>
         <a href="docs/index.html" target="_blank">API</a>
       </li>
       <li @click="topPanelIsVisible = false">
-        Hide Panel
+        Hide
       </li>
     </ul>
   </div>
@@ -380,6 +380,8 @@
     padding-right: 10px;
     cursor: default;
     font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   .nav .active {
