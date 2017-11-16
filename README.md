@@ -8,8 +8,8 @@
 
 # How to use
 
-* run streamlabs-obs
-* enable websokets connections in settings->API
+* run streamlabs-obs with `--adv-settings` parameter
+* enable websokets connections in `settings->API`
 * [Launch Application](https://holiber.github.io/slobs-client-example/)
 
 

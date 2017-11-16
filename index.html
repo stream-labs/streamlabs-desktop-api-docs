@@ -39,7 +39,7 @@
         <a href="https://github.com/holiber/slobs-client-example#how-to-use" target="_blank">How to use</a>
       </li>
       <li>
-        <a href="docs/index.html" target="_blank">API reference</a>
+        <a href="docs/index.html" target="_blank">API</a>
       </li>
       <li @click="topPanelIsVisible = false">
         Hide Panel
@@ -47,6 +47,8 @@
     </ul>
   </div>
 
+
+  <div v-if="connectionStatus != 'connected'" style="color: red">Streamlabs-OBS is not connected</div>
 
 
 
@@ -99,13 +101,15 @@
   
   <div class="console" v-show="page == 'console'">
     <textarea name="" id="" cols="30" rows="10" v-model="requestString"></textarea>
-    <div class="text-right buttons">
+    <div class="text-right buttons" v-if="connectionStatus == 'connected'">
       <button type="button" class="btn btn-primary" @click="resetRequestString">Reset</button>
       <button type="button" class="btn btn-primary" @click="clearLog">Clear Log</button>
       <button type="button" class="btn btn-primary" @click="sendMessage(requestString)">Send</button>
     </div>
     <div class="messages" ref="messages"></div>
   </div>
+
+
 
 </div>
 
@@ -153,7 +157,7 @@
 
         this.socket.onclose = (e) => {
           this.connectionStatus = 'disconnected';
-          alert(e.reason || 'disconnected');
+          alert('disconnected: ' + e.reason);
           console.log('close', e);
         };
       },
@@ -392,7 +396,7 @@
     color: inherit;
   }
 
-  .nav > li > a:hover {
+  .nav > li > a:hover, .nav > li > a:focus {
     background-color: inherit;
   }
 
