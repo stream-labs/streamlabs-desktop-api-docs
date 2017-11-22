@@ -15,7 +15,7 @@ This repo also includes simple web-interface for [Streamlabs-OBS](https://github
 
 * run Streamlabs-OBS with `--adv-settings` parameter
 * enable websokets in `settings->API`
- [Launch web-interface](https://stream-labs.github.io/streamlabs-obs-api-docs)
+* [Launch web-interface](https://stream-labs.github.io/streamlabs-obs-api-docs)
 * click `connect` button on the top of the page
 
 
