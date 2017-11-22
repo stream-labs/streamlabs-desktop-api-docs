@@ -1,4 +1,4 @@
-# streamlabs-obs API documentation
+# Streamlabs-OBS API documentation
 
 
 [Streamlabs-OBS](https://github.com/stream-labs/streamlabs-obs) Has API for interacting with the application. You can use this API to speed up some UI actions or for writing drivers for any kind of remote controllers.
@@ -24,7 +24,7 @@ The web-interface also includes a simple console for testing direct API requests
 
 # How to run web-application on local machine
 * clone the repo
-* install web-interface application via `npm install`
+* install the web-interface application via `npm install`
 * run `npm start` to start simple HTTP server
-* open one of suggested URLs in a browser
+* open one of the suggested URLs in a browser
 
