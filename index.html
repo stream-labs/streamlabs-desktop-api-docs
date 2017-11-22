@@ -36,9 +36,6 @@
         Console
       </li>
       <li>
-        <a href="https://github.com/holiber/slobs-client-example#how-to-use" target="_blank">Docs</a>
-      </li>
-      <li>
         <a href="docs/index.html" target="_blank">API</a>
       </li>
       <li @click="topPanelIsVisible = false">
@@ -48,7 +45,10 @@
   </div>
 
 
-  <div v-if="connectionStatus != 'connected'" style="color: red">Streamlabs-OBS is not connected</div>
+  <div v-if="connectionStatus != 'connected'">
+    <span style="color: red">Streamlabs-OBS is not connected</span>
+    <a href="https://github.com/stream-labs/streamlabs-obs-api-docs#how-to-connect" target="_blank">How to connect?</a>
+  </div>
 
 
 
