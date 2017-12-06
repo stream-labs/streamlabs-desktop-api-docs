@@ -22,7 +22,7 @@ This repo also includes simple web-interface for [Streamlabs-OBS](https://github
 The web-interface also includes a simple console for testing direct API requests
 ![Screenshoot1](https://raw.githubusercontent.com/stream-labs/streamlabs-obs-api-docs/master/screenshots/screen2.png)
 
-# How to run web-application on local machine
+# How to run web-application on the local machine
 * clone the repo
 * install the web-interface application via `npm install`
 * run `npm start` to start simple HTTP server
