@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IAppState | slobs-client</title>
+	<title>IGuestApiResponse | slobs-client</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -61,13 +61,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_app_app_.html">&quot;app/app&quot;</a>
+					<a href="../modules/_guest_api_.html">&quot;guest-api&quot;</a>
 				</li>
 				<li>
-					<a href="_app_app_.iappstate.html">IAppState</a>
+					<a href="_guest_api_.iguestapiresponse.html">IGuestApiResponse</a>
 				</li>
 			</ul>
-			<h1>Interface IAppState</h1>
+			<h1>Interface IGuestApiResponse</h1>
 		</div>
 	</div>
 </header>
@@ -78,7 +78,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IAppState</span>
+						<span class="target">IGuestApiResponse</span>
 					</li>
 				</ul>
 			</section>
@@ -86,35 +86,46 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-not-exported">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_app_app_.iappstate.html#argv" class="tsd-kind-icon">argv</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_app_app_.iappstate.html#loading" class="tsd-kind-icon">loading</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_guest_api_.iguestapiresponse.html#error" class="tsd-kind-icon">error</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_guest_api_.iguestapiresponse.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_guest_api_.iguestapiresponse.html#result" class="tsd-kind-icon">result</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="argv" class="tsd-anchor"></a>
-					<h3>argv</h3>
-					<div class="tsd-signature tsd-kind-icon">argv<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="error" class="tsd-anchor"></a>
+					<h3>error</h3>
+					<div class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/ea37f92/app/services/app/app.ts#L22">app/app.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/guest-api.ts#L14">guest-api.ts:14</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="loading" class="tsd-anchor"></a>
-					<h3>loading</h3>
-					<div class="tsd-signature tsd-kind-icon">loading<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="id" class="tsd-anchor"></a>
+					<h3>id</h3>
+					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/ea37f92/app/services/app/app.ts#L21">app/app.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/guest-api.ts#L13">guest-api.ts:13</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="result" class="tsd-anchor"></a>
+					<h3>result</h3>
+					<div class="tsd-signature tsd-kind-icon">result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/guest-api.ts#L15">guest-api.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -127,30 +138,42 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_app_app_.html">"app/app"</a>
+						<a href="../modules/_guest_api_.html">"guest-<wbr>api"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_app_app_.appservice.html" class="tsd-kind-icon">App<wbr>Service</a>
+						<a href="../classes/_guest_api_.guestapiservice.html" class="tsd-kind-icon">Guest<wbr>Api<wbr>Service</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_guest_api_.iguestapicallback.html" class="tsd-kind-icon">IGuest<wbr>Api<wbr>Callback</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_guest_api_.iguestapirequest.html" class="tsd-kind-icon">IGuest<wbr>Api<wbr>Request</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_app_app_.iappstate.html" class="tsd-kind-icon">IApp<wbr>State</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_guest_api_.iguestapiresponse.html" class="tsd-kind-icon">IGuest<wbr>Api<wbr>Response</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="_app_app_.iappstate.html#argv" class="tsd-kind-icon">argv</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_guest_api_.iguestapiresponse.html#error" class="tsd-kind-icon">error</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="_app_app_.iappstate.html#loading" class="tsd-kind-icon">loading</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_guest_api_.iguestapiresponse.html#id" class="tsd-kind-icon">id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_guest_api_.iguestapiresponse.html#result" class="tsd-kind-icon">result</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_guest_api_.irequesthandler.html" class="tsd-kind-icon">IRequest<wbr>Handler</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

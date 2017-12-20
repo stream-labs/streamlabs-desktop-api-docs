@@ -90,6 +90,7 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_tcp_server_.iclient.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_tcp_server_.iclient.html#listenallsubscriptions" class="tsd-kind-icon">listen<wbr>All<wbr>Subscriptions</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_tcp_server_.iclient.html#socket" class="tsd-kind-icon">socket</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_tcp_server_.iclient.html#subscriptions" class="tsd-kind-icon">subscriptions</a></li>
 							</ul>
@@ -105,9 +106,25 @@
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/ea37f92/app/services/tcp-server.ts#L19">tcp-server.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/tcp-server.ts#L24">tcp-server.ts:24</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="listenallsubscriptions" class="tsd-anchor"></a>
+					<h3>listen<wbr>All<wbr>Subscriptions</h3>
+					<div class="tsd-signature tsd-kind-icon">listen<wbr>All<wbr>Subscriptions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/tcp-server.ts#L32">tcp-server.ts:32</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Clients with listenAllSubscriptions=true receive events that have been sent to other clients.
+							This is helpful for tests.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="socket" class="tsd-anchor"></a>
@@ -115,7 +132,7 @@
 					<div class="tsd-signature tsd-kind-icon">socket<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WritableStream</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/ea37f92/app/services/tcp-server.ts#L20">tcp-server.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/tcp-server.ts#L25">tcp-server.ts:25</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -125,7 +142,7 @@
 					<div class="tsd-signature tsd-kind-icon">subscriptions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/ea37f92/app/services/tcp-server.ts#L21">tcp-server.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/tcp-server.ts#L26">tcp-server.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -154,6 +171,9 @@
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 								<a href="_tcp_server_.iclient.html#id" class="tsd-kind-icon">id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_tcp_server_.iclient.html#listenallsubscriptions" class="tsd-kind-icon">listen<wbr>All<wbr>Subscriptions</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 								<a href="_tcp_server_.iclient.html#socket" class="tsd-kind-icon">socket</a>
