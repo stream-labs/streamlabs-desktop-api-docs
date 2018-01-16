@@ -257,7 +257,7 @@
         const result = message.result;
         if (!result) return;
 
-        if (result._type === 'EVENT') {
+        if (result._type === 'EVENT' && result.emitter === 'STREAM') {
           this.subscriptions[message.result.resourceId](result.data);
         }
 

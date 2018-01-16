@@ -106,10 +106,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_audio_audio_.audioservice.html#obsfaders" class="tsd-kind-icon">obs<wbr>Faders</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_audio_audio_.audioservice.html#obsvolmeters" class="tsd-kind-icon">obs<wbr>Volmeters</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_audio_audio_.audioservice.html#options" class="tsd-kind-icon">options</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_audio_audio_.audioservice.html#servicename" class="tsd-kind-icon">service<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_audio_audio_.audioservice.html#sourcedata" class="tsd-kind-icon">source<wbr>Data</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_audio_audio_.audioservice.html#hasinstance" class="tsd-kind-icon">has<wbr>Instance</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_audio_audio_.audioservice.html#issingleton" class="tsd-kind-icon">is<wbr>Singleton</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_audio_audio_.audioservice.html#serviceafterinit" class="tsd-kind-icon">service<wbr>After<wbr>Init</a></li>
@@ -130,6 +129,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_audio_audio_.audioservice.html#fetchaudiosource" class="tsd-kind-icon">fetch<wbr>Audio<wbr>Source</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_audio_audio_.audioservice.html#getdevices" class="tsd-kind-icon">get<wbr>Devices</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_audio_audio_.audioservice.html#getsource" class="tsd-kind-icon">get<wbr>Source</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_audio_audio_.audioservice.html#getsources" class="tsd-kind-icon">get<wbr>Sources</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_audio_audio_.audioservice.html#getsourcesforcurrentscene" class="tsd-kind-icon">get<wbr>Sources<wbr>For<wbr>Current<wbr>Scene</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_audio_audio_.audioservice.html#getsourcesforscene" class="tsd-kind-icon">get<wbr>Sources<wbr>For<wbr>Scene</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="_audio_audio_.audioservice.html#init" class="tsd-kind-icon">init</a></li>
@@ -167,7 +167,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/service.ts#L76">service.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/service.ts#L76">service.ts:76</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -186,26 +186,6 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="obsfaders" class="tsd-anchor"></a>
-					<h3>obs<wbr>Faders</h3>
-					<div class="tsd-signature tsd-kind-icon">obs<wbr>Faders<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IFader</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/audio/audio.ts#L40">audio/audio.ts:40</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="obsvolmeters" class="tsd-anchor"></a>
-					<h3>obs<wbr>Volmeters</h3>
-					<div class="tsd-signature tsd-kind-icon">obs<wbr>Volmeters<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IVolmeter</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/audio/audio.ts#L41">audio/audio.ts:41</a></li>
-						</ul>
-					</aside>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="options" class="tsd-anchor"></a>
 					<h3>options</h3>
@@ -213,7 +193,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#options">options</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/service.ts#L29">service.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/service.ts#L29">service.ts:29</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -229,7 +209,17 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#servicename">serviceName</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/service.ts#L28">service.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/service.ts#L28">service.ts:28</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="sourcedata" class="tsd-anchor"></a>
+					<h3>source<wbr>Data</h3>
+					<div class="tsd-signature tsd-kind-icon">source<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_audio_audio_.iaudiosourcedata.html" class="tsd-signature-type">IAudioSourceData</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/audio/audio.ts#L49">audio/audio.ts:49</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -240,7 +230,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#hasinstance">hasInstance</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/service.ts#L12">service.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/service.ts#L12">service.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -251,7 +241,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#issingleton">isSingleton</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/service.ts#L13">service.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/service.ts#L13">service.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -262,7 +252,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#serviceafterinit">serviceAfterInit</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/service.ts#L18">service.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/service.ts#L18">service.ts:18</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -286,7 +276,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_stateful_service_.statefulservice.html">StatefulService</a>.<a href="_stateful_service_.statefulservice.html#state">state</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/stateful-service.ts#L64">stateful-service.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/stateful-service.ts#L64">stateful-service.ts:64</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_audio_audio_api_.iaudiosourcesstate.html" class="tsd-signature-type">IAudioSourcesState</a></h4>
@@ -295,7 +285,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_stateful_service_.statefulservice.html">StatefulService</a>.<a href="_stateful_service_.statefulservice.html#state">state</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/stateful-service.ts#L69">stateful-service.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/stateful-service.ts#L69">stateful-service.ts:69</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -319,7 +309,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_stateful_service_.statefulservice.html">StatefulService</a>.<a href="_stateful_service_.statefulservice.html#store">store</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/stateful-service.ts#L60">stateful-service.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/stateful-service.ts#L60">stateful-service.ts:60</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Store</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -337,7 +327,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#instance">instance</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/service.ts#L31">service.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/service.ts#L31">service.ts:31</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -358,7 +348,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#afterinit">afterInit</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/service.ts#L103">service.ts:103</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/service.ts#L103">service.ts:103</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -381,7 +371,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/audio/audio.ts#L110">audio/audio.ts:110</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/audio/audio.ts#L124">audio/audio.ts:124</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -405,7 +395,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_audio_audio_api_.iaudioserviceapi.html">IAudioServiceApi</a>.<a href="../interfaces/_audio_audio_api_.iaudioserviceapi.html#getdevices">getDevices</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/audio/audio.ts#L133">audio/audio.ts:133</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/audio/audio.ts#L147">audio/audio.ts:147</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_audio_audio_api_.iaudiodevice.html" class="tsd-signature-type">IAudioDevice</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -423,7 +413,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_audio_audio_api_.iaudioserviceapi.html">IAudioServiceApi</a>.<a href="../interfaces/_audio_audio_api_.iaudioserviceapi.html#getsource">getSource</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/audio/audio.ts#L87">audio/audio.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/audio/audio.ts#L96">audio/audio.ts:96</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -433,6 +423,24 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_audio_audio_.audiosource.html" class="tsd-signature-type">AudioSource</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getsources" class="tsd-anchor"></a>
+					<h3>get<wbr>Sources</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Sources<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_audio_audio_.audiosource.html" class="tsd-signature-type">AudioSource</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_audio_audio_api_.iaudioserviceapi.html">IAudioServiceApi</a>.<a href="../interfaces/_audio_audio_api_.iaudioserviceapi.html#getsources">getSources</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/audio/audio.ts#L101">audio/audio.ts:101</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_audio_audio_.audiosource.html" class="tsd-signature-type">AudioSource</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -447,7 +455,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_audio_audio_api_.iaudioserviceapi.html">IAudioServiceApi</a>.<a href="../interfaces/_audio_audio_api_.iaudioserviceapi.html#getsourcesforcurrentscene">getSourcesForCurrentScene</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/audio/audio.ts#L92">audio/audio.ts:92</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/audio/audio.ts#L106">audio/audio.ts:106</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_audio_audio_.audiosource.html" class="tsd-signature-type">AudioSource</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -465,7 +473,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_audio_audio_api_.iaudioserviceapi.html">IAudioServiceApi</a>.<a href="../interfaces/_audio_audio_api_.iaudioserviceapi.html#getsourcesforscene">getSourcesForScene</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/audio/audio.ts#L97">audio/audio.ts:97</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/audio/audio.ts#L111">audio/audio.ts:111</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -489,7 +497,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#init">init</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/audio/audio.ts#L48">audio/audio.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/audio/audio.ts#L56">audio/audio.ts:56</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -507,7 +515,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#mounted">mounted</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/service.ts#L95">service.ts:95</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/service.ts#L95">service.ts:95</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -529,7 +537,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/audio/audio.ts#L161">audio/audio.ts:161</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/audio/audio.ts#L175">audio/audio.ts:175</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -547,7 +555,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#createinstance">createInstance</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/service.ts#L54">service.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/service.ts#L54">service.ts:54</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -579,7 +587,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#getresourceid">getResourceId</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/service.ts#L72">service.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/service.ts#L72">service.ts:72</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -603,7 +611,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_stateful_service_.statefulservice.html">StatefulService</a>.<a href="_stateful_service_.statefulservice.html#getstore">getStore</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/stateful-service.ts#L55">stateful-service.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/stateful-service.ts#L55">stateful-service.ts:55</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Store</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -620,7 +628,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/audio/audio.ts#L79">audio/audio.ts:79</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/audio/audio.ts#L88">audio/audio.ts:88</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -644,7 +652,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#setupinitfunction">setupInitFunction</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/service.ts#L46">service.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/service.ts#L46">service.ts:46</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -691,7 +699,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#setupproxy">setupProxy</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/service.ts#L39">service.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/service.ts#L39">service.ts:39</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -738,7 +746,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_stateful_service_.statefulservice.html">StatefulService</a>.<a href="_stateful_service_.statefulservice.html#setupvuexstore">setupVuexStore</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/stateful-service.ts#L51">stateful-service.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/stateful-service.ts#L51">stateful-service.ts:51</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -761,7 +769,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/audio/audio.ts#L74">audio/audio.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/audio/audio.ts#L83">audio/audio.ts:83</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -783,7 +791,7 @@
 					<div class="tsd-signature tsd-kind-icon">initial<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/audio/audio.ts#L36">audio/audio.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/audio/audio.ts#L44">audio/audio.ts:44</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -792,7 +800,7 @@
 						<div class="tsd-signature tsd-kind-icon">audio<wbr>Sources<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/664e7c3/app/services/audio/audio.ts#L37">audio/audio.ts:37</a></li>
+								<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/54928c7/app/services/audio/audio.ts#L45">audio/audio.ts:45</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-type-declaration">
@@ -828,17 +836,14 @@
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
 								<a href="_audio_audio_.audioservice.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_audio_audio_.audioservice.html#obsfaders" class="tsd-kind-icon">obs<wbr>Faders</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_audio_audio_.audioservice.html#obsvolmeters" class="tsd-kind-icon">obs<wbr>Volmeters</a>
-							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_audio_audio_.audioservice.html#options" class="tsd-kind-icon">options</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_audio_audio_.audioservice.html#servicename" class="tsd-kind-icon">service<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_audio_audio_.audioservice.html#sourcedata" class="tsd-kind-icon">source<wbr>Data</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="_audio_audio_.audioservice.html#hasinstance" class="tsd-kind-icon">has<wbr>Instance</a>
@@ -869,6 +874,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_audio_audio_.audioservice.html#getsource" class="tsd-kind-icon">get<wbr>Source</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_audio_audio_.audioservice.html#getsources" class="tsd-kind-icon">get<wbr>Sources</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_audio_audio_.audioservice.html#getsourcesforcurrentscene" class="tsd-kind-icon">get<wbr>Sources<wbr>For<wbr>Current<wbr>Scene</a>
@@ -918,6 +926,9 @@
 				<ul class="after-current">
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
 						<a href="_audio_audio_.audiosource.html" class="tsd-kind-icon">Audio<wbr>Source</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/_audio_audio_.iaudiosourcedata.html" class="tsd-kind-icon">IAudio<wbr>Source<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/_audio_audio_.html#volmeter_update_interval" class="tsd-kind-icon">VOLMETER_<wbr>UPDATE_<wbr>INTERVAL</a>
