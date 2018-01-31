@@ -5,7 +5,7 @@
 
 [GOTO DOCUMENTATION PAGES](https://stream-labs.github.io/streamlabs-obs-api-docs/docs/index.html)
 
-This repo also includes a simple web-interface for [Streamlabs-OBS](https://github.com/stream-labs/streamlabs-obs) that you can use as example to start work with API. This web-interface demonstrates some basic features like shitching between scenes, show/hide, mute/unmute sources.
+This repo also includes a simple web-interface for [Streamlabs-OBS](https://github.com/stream-labs/streamlabs-obs) that you can use as an example to start to work with API. This web-interface demonstrates some basic features like shitching between scenes, show/hide, mute/unmute sources.
  
  [Launch web-interface](https://stream-labs.github.io/streamlabs-obs-api-docs)
 
