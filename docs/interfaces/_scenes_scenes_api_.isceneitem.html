@@ -78,10 +78,15 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ISceneItem</span>
+						<a href="_scenes_scenes_api_.isceneitemsettings.html" class="tsd-signature-type">ISceneItemSettings</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<a href="_scenes_scenes_api_.isceneitemapi.html" class="tsd-signature-type">ISceneItemApi</a>
+								<span class="target">ISceneItem</span>
+								<ul class="tsd-hierarchy">
+									<li>
+										<a href="_scenes_scenes_api_.isceneitemapi.html" class="tsd-signature-type">ISceneItemApi</a>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</li>
@@ -94,17 +99,12 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scenes_scenes_api_.isceneitem.html#crop" class="tsd-kind-icon">crop</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scenes_scenes_api_.isceneitem.html#locked" class="tsd-kind-icon">locked</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_scenes_scenes_api_.isceneitem.html#locked" class="tsd-kind-icon">locked</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scenes_scenes_api_.isceneitem.html#obssceneitemid" class="tsd-kind-icon">obs<wbr>Scene<wbr>Item<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scenes_scenes_api_.isceneitem.html#rotation" class="tsd-kind-icon">rotation</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scenes_scenes_api_.isceneitem.html#scalex" class="tsd-kind-icon">scaleX</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scenes_scenes_api_.isceneitem.html#scaley" class="tsd-kind-icon">scaleY</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scenes_scenes_api_.isceneitem.html#sceneitemid" class="tsd-kind-icon">scene<wbr>Item<wbr>Id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scenes_scenes_api_.isceneitem.html#sourceid" class="tsd-kind-icon">source<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scenes_scenes_api_.isceneitem.html#visible" class="tsd-kind-icon">visible</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scenes_scenes_api_.isceneitem.html#x" class="tsd-kind-icon">x</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scenes_scenes_api_.isceneitem.html#y" class="tsd-kind-icon">y</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_scenes_scenes_api_.isceneitem.html#transform" class="tsd-kind-icon">transform</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_scenes_scenes_api_.isceneitem.html#visible" class="tsd-kind-icon">visible</a></li>
 							</ul>
 						</section>
 					</div>
@@ -112,23 +112,14 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="crop" class="tsd-anchor"></a>
-					<h3>crop</h3>
-					<div class="tsd-signature tsd-kind-icon">crop<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ICrop</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/scenes/scenes-api.ts#L91">scenes/scenes-api.ts:91</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="locked" class="tsd-anchor"></a>
 					<h3>locked</h3>
 					<div class="tsd-signature tsd-kind-icon">locked<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_scenes_scenes_api_.isceneitemsettings.html">ISceneItemSettings</a>.<a href="_scenes_scenes_api_.isceneitemsettings.html#locked">locked</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/scenes/scenes-api.ts#L92">scenes/scenes-api.ts:92</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/scenes/scenes-api.ts#L95">scenes/scenes-api.ts:95</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -138,37 +129,7 @@
 					<div class="tsd-signature tsd-kind-icon">obs<wbr>Scene<wbr>Item<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/scenes/scenes-api.ts#L85">scenes/scenes-api.ts:85</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="rotation" class="tsd-anchor"></a>
-					<h3>rotation</h3>
-					<div class="tsd-signature tsd-kind-icon">rotation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/scenes/scenes-api.ts#L93">scenes/scenes-api.ts:93</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="scalex" class="tsd-anchor"></a>
-					<h3>scaleX</h3>
-					<div class="tsd-signature tsd-kind-icon">scaleX<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/scenes/scenes-api.ts#L88">scenes/scenes-api.ts:88</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="scaley" class="tsd-anchor"></a>
-					<h3>scaleY</h3>
-					<div class="tsd-signature tsd-kind-icon">scaleY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/scenes/scenes-api.ts#L89">scenes/scenes-api.ts:89</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/scenes/scenes-api.ts#L108">scenes/scenes-api.ts:108</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -178,7 +139,7 @@
 					<div class="tsd-signature tsd-kind-icon">scene<wbr>Item<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/scenes/scenes-api.ts#L83">scenes/scenes-api.ts:83</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/scenes/scenes-api.ts#L106">scenes/scenes-api.ts:106</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -188,37 +149,29 @@
 					<div class="tsd-signature tsd-kind-icon">source<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/scenes/scenes-api.ts#L84">scenes/scenes-api.ts:84</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/scenes/scenes-api.ts#L107">scenes/scenes-api.ts:107</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="transform" class="tsd-anchor"></a>
+					<h3>transform</h3>
+					<div class="tsd-signature tsd-kind-icon">transform<span class="tsd-signature-symbol">:</span> <a href="_scenes_scenes_api_.itransform.html" class="tsd-signature-type">ITransform</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_scenes_scenes_api_.isceneitemsettings.html">ISceneItemSettings</a>.<a href="_scenes_scenes_api_.isceneitemsettings.html#transform">transform</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/scenes/scenes-api.ts#L93">scenes/scenes-api.ts:93</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="visible" class="tsd-anchor"></a>
 					<h3>visible</h3>
 					<div class="tsd-signature tsd-kind-icon">visible<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_scenes_scenes_api_.isceneitemsettings.html">ISceneItemSettings</a>.<a href="_scenes_scenes_api_.isceneitemsettings.html#visible">visible</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/scenes/scenes-api.ts#L90">scenes/scenes-api.ts:90</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="x" class="tsd-anchor"></a>
-					<h3>x</h3>
-					<div class="tsd-signature tsd-kind-icon">x<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/scenes/scenes-api.ts#L86">scenes/scenes-api.ts:86</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="y" class="tsd-anchor"></a>
-					<h3>y</h3>
-					<div class="tsd-signature tsd-kind-icon">y<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/scenes/scenes-api.ts#L87">scenes/scenes-api.ts:87</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/scenes/scenes-api.ts#L94">scenes/scenes-api.ts:94</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -238,6 +191,12 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_scenes_scenes_api_.ipartialsettings.html" class="tsd-kind-icon">IPartial<wbr>Settings</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_scenes_scenes_api_.ipartialtransform.html" class="tsd-kind-icon">IPartial<wbr>Transform</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_scenes_scenes_api_.iscene.html" class="tsd-kind-icon">IScene</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
@@ -251,23 +210,11 @@
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_scenes_scenes_api_.isceneitem.html" class="tsd-kind-icon">IScene<wbr>Item</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_scenes_scenes_api_.isceneitem.html#crop" class="tsd-kind-icon">crop</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_scenes_scenes_api_.isceneitem.html#locked" class="tsd-kind-icon">locked</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_scenes_scenes_api_.isceneitem.html#obssceneitemid" class="tsd-kind-icon">obs<wbr>Scene<wbr>Item<wbr>Id</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_scenes_scenes_api_.isceneitem.html#rotation" class="tsd-kind-icon">rotation</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_scenes_scenes_api_.isceneitem.html#scalex" class="tsd-kind-icon">scaleX</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_scenes_scenes_api_.isceneitem.html#scaley" class="tsd-kind-icon">scaleY</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_scenes_scenes_api_.isceneitem.html#sceneitemid" class="tsd-kind-icon">scene<wbr>Item<wbr>Id</a>
@@ -275,19 +222,19 @@
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_scenes_scenes_api_.isceneitem.html#sourceid" class="tsd-kind-icon">source<wbr>Id</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_scenes_scenes_api_.isceneitem.html#transform" class="tsd-kind-icon">transform</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_scenes_scenes_api_.isceneitem.html#visible" class="tsd-kind-icon">visible</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_scenes_scenes_api_.isceneitem.html#x" class="tsd-kind-icon">x</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_scenes_scenes_api_.isceneitem.html#y" class="tsd-kind-icon">y</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_scenes_scenes_api_.isceneitemactions.html" class="tsd-kind-icon">IScene<wbr>Item<wbr>Actions</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_scenes_scenes_api_.isceneitemaddoptions.html" class="tsd-kind-icon">IScene<wbr>Item<wbr>Add<wbr>Options</a>
 					</li>
@@ -298,10 +245,16 @@
 						<a href="_scenes_scenes_api_.isceneiteminfo.html" class="tsd-kind-icon">IScene<wbr>Item<wbr>Info</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_scenes_scenes_api_.isceneitemsettings.html" class="tsd-kind-icon">IScene<wbr>Item<wbr>Settings</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_scenes_scenes_api_.iscenesserviceapi.html" class="tsd-kind-icon">IScenes<wbr>Service<wbr>Api</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_scenes_scenes_api_.iscenesstate.html" class="tsd-kind-icon">IScenes<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_scenes_scenes_api_.itransform.html" class="tsd-kind-icon">ITransform</a>
 					</li>
 				</ul>
 			</nav>

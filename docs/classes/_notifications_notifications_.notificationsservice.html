@@ -108,7 +108,6 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_notifications_notifications_.notificationsservice.html#notificationpushed" class="tsd-kind-icon">notification<wbr>Pushed</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_notifications_notifications_.notificationsservice.html#notificationread" class="tsd-kind-icon">notification<wbr>Read</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_notifications_notifications_.notificationsservice.html#options" class="tsd-kind-icon">options</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_notifications_notifications_.notificationsservice.html#servicename" class="tsd-kind-icon">service<wbr>Name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_notifications_notifications_.notificationsservice.html#servicesmanager" class="tsd-kind-icon">services<wbr>Manager</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_notifications_notifications_.notificationsservice.html#hasinstance" class="tsd-kind-icon">has<wbr>Instance</a></li>
@@ -142,9 +141,9 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_notifications_notifications_.notificationsservice.html#markasread" class="tsd-kind-icon">mark<wbr>AsRead</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_notifications_notifications_.notificationsservice.html#mounted" class="tsd-kind-icon">mounted</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_notifications_notifications_.notificationsservice.html#push" class="tsd-kind-icon">push</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_notifications_notifications_.notificationsservice.html#restoredefaultsettings" class="tsd-kind-icon">restore<wbr>Default<wbr>Settings</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_notifications_notifications_.notificationsservice.html#setsettings" class="tsd-kind-icon">set<wbr>Settings</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_notifications_notifications_.notificationsservice.html#shownotifications" class="tsd-kind-icon">show<wbr>Notifications</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_notifications_notifications_.notificationsservice.html#showtroubleshooter" class="tsd-kind-icon">show<wbr>Troubleshooter</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_notifications_notifications_.notificationsservice.html#createinstance" class="tsd-kind-icon">create<wbr>Instance</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_notifications_notifications_.notificationsservice.html#getresourceid" class="tsd-kind-icon">get<wbr>Resource<wbr>Id</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_notifications_notifications_.notificationsservice.html#getstore" class="tsd-kind-icon">get<wbr>Store</a></li>
@@ -168,23 +167,20 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Notifications<wbr>Service<span class="tsd-signature-symbol">(</span>enforcer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Symbol</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_notifications_notifications_.notificationsservice.html" class="tsd-signature-type">NotificationsService</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Notifications<wbr>Service<span class="tsd-signature-symbol">(</span>enforcer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Symbol</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_notifications_notifications_.notificationsservice.html" class="tsd-signature-type">NotificationsService</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/service.ts#L76">service.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/service.ts#L74">service.ts:74</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>enforcer: <span class="tsd-signature-type">Symbol</span></h5>
-								</li>
-								<li>
-									<h5>options: <span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_notifications_notifications_.notificationsservice.html" class="tsd-signature-type">NotificationsService</a></h4>
@@ -201,7 +197,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html">INotificationsServiceApi</a>.<a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html#notificationpushed">notificationPushed</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/notifications/notifications.ts#L36">notifications/notifications.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/notifications/notifications.ts#L35">notifications/notifications.ts:35</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -212,25 +208,9 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html">INotificationsServiceApi</a>.<a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html#notificationread">notificationRead</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/notifications/notifications.ts#L37">notifications/notifications.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/notifications/notifications.ts#L36">notifications/notifications.ts:36</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-					<a name="options" class="tsd-anchor"></a>
-					<h3>options</h3>
-					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#options">options</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/service.ts#L29">service.ts:29</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-						</ul>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="servicename" class="tsd-anchor"></a>
@@ -239,7 +219,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#servicename">serviceName</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/service.ts#L28">service.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/service.ts#L26">service.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -249,7 +229,7 @@
 					<div class="tsd-signature tsd-kind-icon">services<wbr>Manager<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ServicesManager</span><span class="tsd-signature-symbol"> =&nbsp;ServicesManager.instance</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/notifications/notifications.ts#L34">notifications/notifications.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/notifications/notifications.ts#L33">notifications/notifications.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -260,7 +240,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#hasinstance">hasInstance</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/service.ts#L12">service.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/service.ts#L11">service.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -271,7 +251,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#issingleton">isSingleton</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/service.ts#L13">service.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/service.ts#L12">service.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -282,7 +262,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#serviceafterinit">serviceAfterInit</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/service.ts#L18">service.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/service.ts#L17">service.ts:17</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -306,7 +286,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_stateful_service_.statefulservice.html">StatefulService</a>.<a href="_stateful_service_.statefulservice.html#state">state</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/stateful-service.ts#L64">stateful-service.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/stateful-service.ts#L64">stateful-service.ts:64</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_notifications_notifications_.inotificationsstate.html" class="tsd-signature-type">INotificationsState</a></h4>
@@ -315,7 +295,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_stateful_service_.statefulservice.html">StatefulService</a>.<a href="_stateful_service_.statefulservice.html#state">state</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/stateful-service.ts#L69">stateful-service.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/stateful-service.ts#L69">stateful-service.ts:69</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -339,7 +319,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_stateful_service_.statefulservice.html">StatefulService</a>.<a href="_stateful_service_.statefulservice.html#store">store</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/stateful-service.ts#L60">stateful-service.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/stateful-service.ts#L60">stateful-service.ts:60</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Store</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -357,7 +337,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_persistent_stateful_service_.persistentstatefulservice.html">PersistentStatefulService</a>.<a href="_persistent_stateful_service_.persistentstatefulservice.html#initialstate">initialState</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/persistent-stateful-service.ts#L12">persistent-stateful-service.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/persistent-stateful-service.ts#L12">persistent-stateful-service.ts:12</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -375,7 +355,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#instance">instance</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/service.ts#L31">service.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/service.ts#L28">service.ts:28</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -393,7 +373,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_persistent_stateful_service_.persistentstatefulservice.html">PersistentStatefulService</a>.<a href="_persistent_stateful_service_.persistentstatefulservice.html#localstoragekey">localStorageKey</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/persistent-stateful-service.ts#L21">persistent-stateful-service.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/persistent-stateful-service.ts#L21">persistent-stateful-service.ts:21</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -414,7 +394,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#afterinit">afterInit</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/service.ts#L103">service.ts:103</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/service.ts#L94">service.ts:94</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -438,7 +418,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html">INotificationsServiceApi</a>.<a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html#applyaction">applyAction</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/notifications/notifications.ts#L66">notifications/notifications.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/notifications/notifications.ts#L65">notifications/notifications.ts:65</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -462,7 +442,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html">INotificationsServiceApi</a>.<a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html#getall">getAll</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/notifications/notifications.ts#L73">notifications/notifications.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/notifications/notifications.ts#L72">notifications/notifications.ts:72</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -486,7 +466,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html">INotificationsServiceApi</a>.<a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html#getnotification">getNotification</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/notifications/notifications.ts#L62">notifications/notifications.ts:62</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/notifications/notifications.ts#L61">notifications/notifications.ts:61</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -510,7 +490,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html">INotificationsServiceApi</a>.<a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html#getread">getRead</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/notifications/notifications.ts#L83">notifications/notifications.ts:83</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/notifications/notifications.ts#L82">notifications/notifications.ts:82</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -534,7 +514,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html">INotificationsServiceApi</a>.<a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html#getsettings">getSettings</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/notifications/notifications.ts#L100">notifications/notifications.ts:100</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/notifications/notifications.ts#L99">notifications/notifications.ts:99</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_notifications_notifications_api_.inotificationssettings.html" class="tsd-signature-type">INotificationsSettings</a></h4>
@@ -552,7 +532,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html">INotificationsServiceApi</a>.<a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html#getsettingsformdata">getSettingsFormData</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/notifications/notifications.ts#L104">notifications/notifications.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/notifications/notifications.ts#L103">notifications/notifications.ts:103</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TFormData</span></h4>
@@ -570,7 +550,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html">INotificationsServiceApi</a>.<a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html#getunread">getUnread</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/notifications/notifications.ts#L79">notifications/notifications.ts:79</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/notifications/notifications.ts#L78">notifications/notifications.ts:78</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -594,7 +574,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_persistent_stateful_service_.persistentstatefulservice.html">PersistentStatefulService</a>.<a href="_persistent_stateful_service_.persistentstatefulservice.html#init">init</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/notifications/notifications.ts#L41">notifications/notifications.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/notifications/notifications.ts#L40">notifications/notifications.ts:40</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -612,7 +592,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html">INotificationsServiceApi</a>.<a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html#markallasread">markAllAsRead</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/notifications/notifications.ts#L93">notifications/notifications.ts:93</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/notifications/notifications.ts#L92">notifications/notifications.ts:92</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -630,7 +610,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html">INotificationsServiceApi</a>.<a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html#markasread">markAsRead</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/notifications/notifications.ts#L87">notifications/notifications.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/notifications/notifications.ts#L86">notifications/notifications.ts:86</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -654,7 +634,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#mounted">mounted</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/service.ts#L95">service.ts:95</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/service.ts#L88">service.ts:88</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -677,7 +657,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html">INotificationsServiceApi</a>.<a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html#push">push</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/notifications/notifications.ts#L46">notifications/notifications.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/notifications/notifications.ts#L45">notifications/notifications.ts:45</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -687,6 +667,24 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_notifications_notifications_api_.inotification.html" class="tsd-signature-type">INotification</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="restoredefaultsettings" class="tsd-anchor"></a>
+					<h3>restore<wbr>Default<wbr>Settings</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">restore<wbr>Default<wbr>Settings<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html">INotificationsServiceApi</a>.<a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html#restoredefaultsettings">restoreDefaultSettings</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/notifications/notifications.ts#L130">notifications/notifications.ts:130</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -701,7 +699,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html">INotificationsServiceApi</a>.<a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html#setsettings">setSettings</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/notifications/notifications.ts#L127">notifications/notifications.ts:127</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/notifications/notifications.ts#L126">notifications/notifications.ts:126</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -725,32 +723,9 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html">INotificationsServiceApi</a>.<a href="../interfaces/_notifications_notifications_api_.inotificationsserviceapi.html#shownotifications">showNotifications</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/notifications/notifications.ts#L131">notifications/notifications.ts:131</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/notifications/notifications.ts#L134">notifications/notifications.ts:134</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="showtroubleshooter" class="tsd-anchor"></a>
-					<h3>show<wbr>Troubleshooter</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">show<wbr>Troubleshooter<span class="tsd-signature-symbol">(</span>issueCode<span class="tsd-signature-symbol">: </span><a href="../modules/_performance_monitor_performance_monitor_.html#tissuecode" class="tsd-signature-type">TIssueCode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/notifications/notifications.ts#L141">notifications/notifications.ts:141</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>issueCode: <a href="../modules/_performance_monitor_performance_monitor_.html#tissuecode" class="tsd-signature-type">TIssueCode</a></h5>
-								</li>
-							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -759,14 +734,14 @@
 					<a name="createinstance" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> create<wbr>Instance</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Instance<span class="tsd-signature-symbol">(</span>ServiceClass<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Instance<span class="tsd-signature-symbol">(</span>ServiceClass<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#createinstance">createInstance</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/service.ts#L54">service.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/service.ts#L52">service.ts:52</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -778,9 +753,6 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5>ServiceClass: <span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -798,7 +770,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#getresourceid">getResourceId</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/service.ts#L72">service.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/service.ts#L70">service.ts:70</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -822,7 +794,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_stateful_service_.statefulservice.html">StatefulService</a>.<a href="_stateful_service_.statefulservice.html#getstore">getStore</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/stateful-service.ts#L55">stateful-service.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/stateful-service.ts#L55">stateful-service.ts:55</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Store</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -840,7 +812,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#setupinitfunction">setupInitFunction</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/service.ts#L46">service.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/service.ts#L45">service.ts:45</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -887,7 +859,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#setupproxy">setupProxy</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/service.ts#L39">service.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/service.ts#L38">service.ts:38</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -934,7 +906,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_stateful_service_.statefulservice.html">StatefulService</a>.<a href="_stateful_service_.statefulservice.html#setupvuexstore">setupVuexStore</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/stateful-service.ts#L51">stateful-service.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/stateful-service.ts#L51">stateful-service.ts:51</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -957,7 +929,7 @@
 					<aside class="tsd-sources">
 						<p>Overrides <a href="_persistent_stateful_service_.persistentstatefulservice.html">PersistentStatefulService</a>.<a href="_persistent_stateful_service_.persistentstatefulservice.html#defaultstate">defaultState</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/notifications/notifications.ts#L25">notifications/notifications.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/notifications/notifications.ts#L24">notifications/notifications.ts:24</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -966,7 +938,7 @@
 						<div class="tsd-signature tsd-kind-icon">notifications<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/notifications/notifications.ts#L26">notifications/notifications.ts:26</a></li>
+								<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/notifications/notifications.ts#L25">notifications/notifications.ts:25</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -976,7 +948,7 @@
 						<div class="tsd-signature tsd-kind-icon">settings<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/notifications/notifications.ts#L27">notifications/notifications.ts:27</a></li>
+								<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/notifications/notifications.ts#L26">notifications/notifications.ts:26</a></li>
 							</ul>
 						</aside>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -985,7 +957,7 @@
 							<div class="tsd-signature tsd-kind-icon">enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/notifications/notifications.ts#L28">notifications/notifications.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/notifications/notifications.ts#L27">notifications/notifications.ts:27</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -995,7 +967,7 @@
 							<div class="tsd-signature tsd-kind-icon">play<wbr>Sound<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/notifications/notifications.ts#L29">notifications/notifications.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/notifications/notifications.ts#L28">notifications/notifications.ts:28</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -1029,9 +1001,6 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_notifications_notifications_.notificationsservice.html#notificationread" class="tsd-kind-icon">notification<wbr>Read</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_notifications_notifications_.notificationsservice.html#options" class="tsd-kind-icon">options</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_notifications_notifications_.notificationsservice.html#servicename" class="tsd-kind-icon">service<wbr>Name</a>
@@ -1103,13 +1072,13 @@
 								<a href="_notifications_notifications_.notificationsservice.html#push" class="tsd-kind-icon">push</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_notifications_notifications_.notificationsservice.html#restoredefaultsettings" class="tsd-kind-icon">restore<wbr>Default<wbr>Settings</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_notifications_notifications_.notificationsservice.html#setsettings" class="tsd-kind-icon">set<wbr>Settings</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_notifications_notifications_.notificationsservice.html#shownotifications" class="tsd-kind-icon">show<wbr>Notifications</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_notifications_notifications_.notificationsservice.html#showtroubleshooter" class="tsd-kind-icon">show<wbr>Troubleshooter</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="_notifications_notifications_.notificationsservice.html#createinstance" class="tsd-kind-icon">create<wbr>Instance</a>

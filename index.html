@@ -192,6 +192,10 @@
           this.onSourceUpdatedHandler(source);
         });
 
+        this.subscribe('ScenesService', 'itemAdded', scenItem => {
+          this.onSceneItemAdded(scenItem);
+      });
+
         this.subscribe('ScenesService', 'itemUpdated', scenItem => {
           this.onSceneItemUpdateHandler(scenItem);
         });
@@ -310,6 +314,10 @@
       onSceneItemUpdateHandler(sceneItemModel) {
         let sceneItem = this.sceneItems.find(sceneItem => sceneItem.sceneItemId === sceneItemModel.sceneItemId);
         Object.assign(sceneItem, sceneItemModel);
+      },
+
+      onSceneItemAdded(sceneItemModel) {
+        this.sceneItems.push(sceneItemModel);
       },
 
       resetRequestString() {

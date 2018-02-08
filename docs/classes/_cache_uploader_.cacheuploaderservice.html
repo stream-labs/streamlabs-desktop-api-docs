@@ -100,7 +100,6 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_cache_uploader_.cacheuploaderservice.html#options" class="tsd-kind-icon">options</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_cache_uploader_.cacheuploaderservice.html#servicename" class="tsd-kind-icon">service<wbr>Name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_cache_uploader_.cacheuploaderservice.html#userservice" class="tsd-kind-icon">user<wbr>Service</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_cache_uploader_.cacheuploaderservice.html#hasinstance" class="tsd-kind-icon">has<wbr>Instance</a></li>
@@ -108,15 +107,17 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_cache_uploader_.cacheuploaderservice.html#serviceafterinit" class="tsd-kind-icon">service<wbr>After<wbr>Init</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_cache_uploader_.cacheuploaderservice.html#cachedir" class="tsd-kind-icon">cache<wbr>Dir</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_cache_uploader_.cacheuploaderservice.html#instance" class="tsd-kind-icon">instance</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_cache_uploader_.cacheuploaderservice.html#adddirifexists" class="tsd-kind-icon">add<wbr>Dir<wbr>IfExists</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_cache_uploader_.cacheuploaderservice.html#afterinit" class="tsd-kind-icon">after<wbr>Init</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_cache_uploader_.cacheuploaderservice.html#init" class="tsd-kind-icon">init</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_cache_uploader_.cacheuploaderservice.html#mounted" class="tsd-kind-icon">mounted</a></li>
@@ -136,23 +137,20 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Cache<wbr>Uploader<wbr>Service<span class="tsd-signature-symbol">(</span>enforcer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Symbol</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_cache_uploader_.cacheuploaderservice.html" class="tsd-signature-type">CacheUploaderService</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Cache<wbr>Uploader<wbr>Service<span class="tsd-signature-symbol">(</span>enforcer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Symbol</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_cache_uploader_.cacheuploaderservice.html" class="tsd-signature-type">CacheUploaderService</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/service.ts#L76">service.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/service.ts#L74">service.ts:74</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>enforcer: <span class="tsd-signature-type">Symbol</span></h5>
-								</li>
-								<li>
-									<h5>options: <span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_cache_uploader_.cacheuploaderservice.html" class="tsd-signature-type">CacheUploaderService</a></h4>
@@ -163,29 +161,13 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-					<a name="options" class="tsd-anchor"></a>
-					<h3>options</h3>
-					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#options">options</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/service.ts#L29">service.ts:29</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-						</ul>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="servicename" class="tsd-anchor"></a>
 					<h3>service<wbr>Name</h3>
 					<div class="tsd-signature tsd-kind-icon">service<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;this.constructor.name</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#servicename">serviceName</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/service.ts#L28">service.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/service.ts#L26">service.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -195,7 +177,7 @@
 					<div class="tsd-signature tsd-kind-icon">user<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="_user_.userservice.html" class="tsd-signature-type">UserService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/cache-uploader.ts#L15">cache-uploader.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/cache-uploader.ts#L15">cache-uploader.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -206,7 +188,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#hasinstance">hasInstance</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/service.ts#L12">service.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/service.ts#L11">service.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -217,7 +199,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#issingleton">isSingleton</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/service.ts#L13">service.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/service.ts#L12">service.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -228,7 +210,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#serviceafterinit">serviceAfterInit</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/service.ts#L18">service.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/service.ts#L17">service.ts:17</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -238,8 +220,25 @@
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="cachedir" class="tsd-anchor"></a>
+					<h3>cache<wbr>Dir</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> cacheDir<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/cache-uploader.ts#L17">cache-uploader.ts:17</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 					<a name="instance" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> instance</h3>
@@ -251,7 +250,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#instance">instance</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/service.ts#L31">service.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/service.ts#L28">service.ts:28</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -261,6 +260,32 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="adddirifexists" class="tsd-anchor"></a>
+					<h3>add<wbr>Dir<wbr>IfExists</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Dir<wbr>IfExists<span class="tsd-signature-symbol">(</span>archive<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Archiver</span>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/cache-uploader.ts#L71">cache-uploader.ts:71</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>archive: <span class="tsd-signature-type">Archiver</span></h5>
+								</li>
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="afterinit" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> after<wbr>Init</h3>
@@ -272,7 +297,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#afterinit">afterInit</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/service.ts#L103">service.ts:103</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/service.ts#L94">service.ts:94</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -296,7 +321,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#init">init</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/service.ts#L88">service.ts:88</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/service.ts#L83">service.ts:83</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -319,7 +344,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#mounted">mounted</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/service.ts#L95">service.ts:95</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/service.ts#L88">service.ts:88</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -341,7 +366,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/cache-uploader.ts#L18">cache-uploader.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/cache-uploader.ts#L21">cache-uploader.ts:21</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -352,14 +377,14 @@
 					<a name="createinstance" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> create<wbr>Instance</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Instance<span class="tsd-signature-symbol">(</span>ServiceClass<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Instance<span class="tsd-signature-symbol">(</span>ServiceClass<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#createinstance">createInstance</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/service.ts#L54">service.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/service.ts#L52">service.ts:52</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -371,9 +396,6 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5>ServiceClass: <span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -391,7 +413,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#getresourceid">getResourceId</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/service.ts#L72">service.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/service.ts#L70">service.ts:70</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -415,7 +437,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#setupinitfunction">setupInitFunction</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/service.ts#L46">service.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/service.ts#L45">service.ts:45</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -462,7 +484,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#setupproxy">setupProxy</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/a53208a/app/services/service.ts#L39">service.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/service.ts#L38">service.ts:38</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -522,9 +544,6 @@
 								<a href="_cache_uploader_.cacheuploaderservice.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_cache_uploader_.cacheuploaderservice.html#options" class="tsd-kind-icon">options</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_cache_uploader_.cacheuploaderservice.html#servicename" class="tsd-kind-icon">service<wbr>Name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -539,8 +558,14 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="_cache_uploader_.cacheuploaderservice.html#serviceafterinit" class="tsd-kind-icon">service<wbr>After<wbr>Init</a>
 							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_cache_uploader_.cacheuploaderservice.html#cachedir" class="tsd-kind-icon">cache<wbr>Dir</a>
+							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="_cache_uploader_.cacheuploaderservice.html#instance" class="tsd-kind-icon">instance</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_cache_uploader_.cacheuploaderservice.html#adddirifexists" class="tsd-kind-icon">add<wbr>Dir<wbr>IfExists</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="_cache_uploader_.cacheuploaderservice.html#afterinit" class="tsd-kind-icon">after<wbr>Init</a>
