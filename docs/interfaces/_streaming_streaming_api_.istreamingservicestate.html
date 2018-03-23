@@ -89,11 +89,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_streaming_streaming_api_.istreamingservicestate.html#isrecording" class="tsd-kind-icon">is<wbr>Recording</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_streaming_streaming_api_.istreamingservicestate.html#isstreaming" class="tsd-kind-icon">is<wbr>Streaming</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_streaming_streaming_api_.istreamingservicestate.html#recordstarttime" class="tsd-kind-icon">record<wbr>Start<wbr>Time</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_streaming_streaming_api_.istreamingservicestate.html#streamok" class="tsd-kind-icon">stream<wbr>Ok</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_streaming_streaming_api_.istreamingservicestate.html#streamstarttime" class="tsd-kind-icon">stream<wbr>Start<wbr>Time</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_streaming_streaming_api_.istreamingservicestate.html#recordingstatus" class="tsd-kind-icon">recording<wbr>Status</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_streaming_streaming_api_.istreamingservicestate.html#recordingstatustime" class="tsd-kind-icon">recording<wbr>Status<wbr>Time</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_streaming_streaming_api_.istreamingservicestate.html#streamingstatus" class="tsd-kind-icon">streaming<wbr>Status</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_streaming_streaming_api_.istreamingservicestate.html#streamingstatustime" class="tsd-kind-icon">streaming<wbr>Status<wbr>Time</a></li>
 							</ul>
 						</section>
 					</div>
@@ -102,52 +101,42 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="isrecording" class="tsd-anchor"></a>
-					<h3>is<wbr>Recording</h3>
-					<div class="tsd-signature tsd-kind-icon">is<wbr>Recording<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="recordingstatus" class="tsd-anchor"></a>
+					<h3>recording<wbr>Status</h3>
+					<div class="tsd-signature tsd-kind-icon">recording<wbr>Status<span class="tsd-signature-symbol">:</span> <a href="../enums/_streaming_streaming_api_.erecordingstate.html" class="tsd-signature-type">ERecordingState</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/streaming/streaming-api.ts#L6">streaming/streaming-api.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/streaming/streaming-api.ts#L21">streaming/streaming-api.ts:21</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="isstreaming" class="tsd-anchor"></a>
-					<h3>is<wbr>Streaming</h3>
-					<div class="tsd-signature tsd-kind-icon">is<wbr>Streaming<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="recordingstatustime" class="tsd-anchor"></a>
+					<h3>recording<wbr>Status<wbr>Time</h3>
+					<div class="tsd-signature tsd-kind-icon">recording<wbr>Status<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/streaming/streaming-api.ts#L4">streaming/streaming-api.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/streaming/streaming-api.ts#L22">streaming/streaming-api.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="recordstarttime" class="tsd-anchor"></a>
-					<h3>record<wbr>Start<wbr>Time</h3>
-					<div class="tsd-signature tsd-kind-icon">record<wbr>Start<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="streamingstatus" class="tsd-anchor"></a>
+					<h3>streaming<wbr>Status</h3>
+					<div class="tsd-signature tsd-kind-icon">streaming<wbr>Status<span class="tsd-signature-symbol">:</span> <a href="../enums/_streaming_streaming_api_.estreamingstate.html" class="tsd-signature-type">EStreamingState</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/streaming/streaming-api.ts#L7">streaming/streaming-api.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/streaming/streaming-api.ts#L19">streaming/streaming-api.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="streamok" class="tsd-anchor"></a>
-					<h3>stream<wbr>Ok</h3>
-					<div class="tsd-signature tsd-kind-icon">stream<wbr>Ok<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="streamingstatustime" class="tsd-anchor"></a>
+					<h3>streaming<wbr>Status<wbr>Time</h3>
+					<div class="tsd-signature tsd-kind-icon">streaming<wbr>Status<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/streaming/streaming-api.ts#L8">streaming/streaming-api.ts:8</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="streamstarttime" class="tsd-anchor"></a>
-					<h3>stream<wbr>Start<wbr>Time</h3>
-					<div class="tsd-signature tsd-kind-icon">stream<wbr>Start<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/streaming/streaming-api.ts#L5">streaming/streaming-api.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/streaming/streaming-api.ts#L20">streaming/streaming-api.ts:20</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -166,6 +155,12 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="../enums/_streaming_streaming_api_.erecordingstate.html" class="tsd-kind-icon">ERecording<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="../enums/_streaming_streaming_api_.estreamingstate.html" class="tsd-kind-icon">EStreaming<wbr>State</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_streaming_streaming_api_.istreamingserviceapi.html" class="tsd-kind-icon">IStreaming<wbr>Service<wbr>Api</a>
 					</li>
@@ -175,19 +170,16 @@
 						<a href="_streaming_streaming_api_.istreamingservicestate.html" class="tsd-kind-icon">IStreaming<wbr>Service<wbr>State</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_streaming_streaming_api_.istreamingservicestate.html#isrecording" class="tsd-kind-icon">is<wbr>Recording</a>
+								<a href="_streaming_streaming_api_.istreamingservicestate.html#recordingstatus" class="tsd-kind-icon">recording<wbr>Status</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_streaming_streaming_api_.istreamingservicestate.html#isstreaming" class="tsd-kind-icon">is<wbr>Streaming</a>
+								<a href="_streaming_streaming_api_.istreamingservicestate.html#recordingstatustime" class="tsd-kind-icon">recording<wbr>Status<wbr>Time</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_streaming_streaming_api_.istreamingservicestate.html#recordstarttime" class="tsd-kind-icon">record<wbr>Start<wbr>Time</a>
+								<a href="_streaming_streaming_api_.istreamingservicestate.html#streamingstatus" class="tsd-kind-icon">streaming<wbr>Status</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_streaming_streaming_api_.istreamingservicestate.html#streamok" class="tsd-kind-icon">stream<wbr>Ok</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_streaming_streaming_api_.istreamingservicestate.html#streamstarttime" class="tsd-kind-icon">stream<wbr>Start<wbr>Time</a>
+								<a href="_streaming_streaming_api_.istreamingservicestate.html#streamingstatustime" class="tsd-kind-icon">streaming<wbr>Status<wbr>Time</a>
 							</li>
 						</ul>
 					</li>

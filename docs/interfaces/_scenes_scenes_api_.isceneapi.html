@@ -101,8 +101,8 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_scenes_scenes_api_.isceneapi.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_scenes_scenes_api_.isceneapi.html#items" class="tsd-kind-icon">items</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_scenes_scenes_api_.isceneapi.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_scenes_scenes_api_.isceneapi.html#nodes" class="tsd-kind-icon">nodes</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -111,10 +111,18 @@
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_scenes_scenes_api_.isceneapi.html#addsource" class="tsd-kind-icon">add<wbr>Source</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_scenes_scenes_api_.isceneapi.html#canaddsource" class="tsd-kind-icon">can<wbr>Add<wbr>Source</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_scenes_scenes_api_.isceneapi.html#createandaddsource" class="tsd-kind-icon">create<wbr>And<wbr>Add<wbr>Source</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_scenes_scenes_api_.isceneapi.html#createfolder" class="tsd-kind-icon">create<wbr>Folder</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_scenes_scenes_api_.isceneapi.html#getfolder" class="tsd-kind-icon">get<wbr>Folder</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_scenes_scenes_api_.isceneapi.html#getfolders" class="tsd-kind-icon">get<wbr>Folders</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_scenes_scenes_api_.isceneapi.html#getitem" class="tsd-kind-icon">get<wbr>Item</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_scenes_scenes_api_.isceneapi.html#getitems" class="tsd-kind-icon">get<wbr>Items</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_scenes_scenes_api_.isceneapi.html#getmodel" class="tsd-kind-icon">get<wbr>Model</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_scenes_scenes_api_.isceneapi.html#getnode" class="tsd-kind-icon">get<wbr>Node</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_scenes_scenes_api_.isceneapi.html#getnodes" class="tsd-kind-icon">get<wbr>Nodes</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_scenes_scenes_api_.isceneapi.html#getselection" class="tsd-kind-icon">get<wbr>Selection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_scenes_scenes_api_.isceneapi.html#makeactive" class="tsd-kind-icon">make<wbr>Active</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_scenes_scenes_api_.isceneapi.html#remove" class="tsd-kind-icon">remove</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_scenes_scenes_api_.isceneapi.html#removefolder" class="tsd-kind-icon">remove<wbr>Folder</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_scenes_scenes_api_.isceneapi.html#removeitem" class="tsd-kind-icon">remove<wbr>Item</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_scenes_scenes_api_.isceneapi.html#setname" class="tsd-kind-icon">set<wbr>Name</a></li>
 							</ul>
@@ -131,18 +139,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_scenes_scenes_api_.iscene.html">IScene</a>.<a href="_scenes_scenes_api_.iscene.html#id">id</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/scenes/scenes-api.ts#L27">scenes/scenes-api.ts:27</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="items" class="tsd-anchor"></a>
-					<h3>items</h3>
-					<div class="tsd-signature tsd-kind-icon">items<span class="tsd-signature-symbol">:</span> <a href="_scenes_scenes_api_.isceneitem.html" class="tsd-signature-type">ISceneItem</a><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_scenes_scenes_api_.iscene.html">IScene</a>.<a href="_scenes_scenes_api_.iscene.html#items">items</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/scenes/scenes-api.ts#L29">scenes/scenes-api.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/scenes/scenes-api.ts#L31">scenes/scenes-api.ts:31</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -153,7 +150,18 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_scenes_scenes_api_.iscene.html">IScene</a>.<a href="_scenes_scenes_api_.iscene.html#name">name</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/scenes/scenes-api.ts#L28">scenes/scenes-api.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/scenes/scenes-api.ts#L32">scenes/scenes-api.ts:32</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="nodes" class="tsd-anchor"></a>
+					<h3>nodes</h3>
+					<div class="tsd-signature tsd-kind-icon">nodes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><a href="_scenes_scenes_api_.isceneitem.html" class="tsd-signature-type">ISceneItem</a><span class="tsd-signature-symbol"> | </span><a href="_scenes_scenes_api_.isceneitemfolder.html" class="tsd-signature-type">ISceneItemFolder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_scenes_scenes_api_.iscene.html">IScene</a>.<a href="_scenes_scenes_api_.iscene.html#nodes">nodes</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/scenes/scenes-api.ts#L33">scenes/scenes-api.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -164,13 +172,13 @@
 					<a name="addsource" class="tsd-anchor"></a>
 					<h3>add<wbr>Source</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Source<span class="tsd-signature-symbol">(</span>sourceId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="_scenes_scenes_api_.isceneitemaddoptions.html" class="tsd-signature-type">ISceneItemAddOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_scenes_scenes_api_.isceneitemapi.html" class="tsd-signature-type">ISceneItemApi</a></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Source<span class="tsd-signature-symbol">(</span>sourceId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="_scenes_scenes_api_.iscenenodeaddoptions.html" class="tsd-signature-type">ISceneNodeAddOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_scenes_scenes_api_.isceneitemapi.html" class="tsd-signature-type">ISceneItemApi</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/scenes/scenes-api.ts#L36">scenes/scenes-api.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/scenes/scenes-api.ts#L44">scenes/scenes-api.ts:44</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -179,7 +187,7 @@
 									<h5>sourceId: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="_scenes_scenes_api_.isceneitemaddoptions.html" class="tsd-signature-type">ISceneItemAddOptions</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="_scenes_scenes_api_.iscenenodeaddoptions.html" class="tsd-signature-type">ISceneNodeAddOptions</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_scenes_scenes_api_.isceneitemapi.html" class="tsd-signature-type">ISceneItemApi</a></h4>
@@ -196,7 +204,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/scenes/scenes-api.ts#L40">scenes/scenes-api.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/scenes/scenes-api.ts#L50">scenes/scenes-api.ts:50</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -219,7 +227,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/scenes/scenes-api.ts#L37">scenes/scenes-api.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/scenes/scenes-api.ts#L45">scenes/scenes-api.ts:45</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -236,6 +244,69 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="createfolder" class="tsd-anchor"></a>
+					<h3>create<wbr>Folder</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Folder<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_scenes_scenes_api_.isceneitemfolderapi.html" class="tsd-signature-type">ISceneItemFolderApi</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/scenes/scenes-api.ts#L46">scenes/scenes-api.ts:46</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_scenes_scenes_api_.isceneitemfolderapi.html" class="tsd-signature-type">ISceneItemFolderApi</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getfolder" class="tsd-anchor"></a>
+					<h3>get<wbr>Folder</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Folder<span class="tsd-signature-symbol">(</span>sceneFolderId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_scenes_scenes_api_.isceneitemfolderapi.html" class="tsd-signature-type">ISceneItemFolderApi</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/scenes/scenes-api.ts#L40">scenes/scenes-api.ts:40</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sceneFolderId: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_scenes_scenes_api_.isceneitemfolderapi.html" class="tsd-signature-type">ISceneItemFolderApi</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getfolders" class="tsd-anchor"></a>
+					<h3>get<wbr>Folders</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Folders<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_scenes_scenes_api_.isceneitemfolderapi.html" class="tsd-signature-type">ISceneItemFolderApi</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/scenes/scenes-api.ts#L43">scenes/scenes-api.ts:43</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_scenes_scenes_api_.isceneitemfolderapi.html" class="tsd-signature-type">ISceneItemFolderApi</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="getitem" class="tsd-anchor"></a>
 					<h3>get<wbr>Item</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
@@ -245,7 +316,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/scenes/scenes-api.ts#L34">scenes/scenes-api.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/scenes/scenes-api.ts#L39">scenes/scenes-api.ts:39</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -268,7 +339,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/scenes/scenes-api.ts#L35">scenes/scenes-api.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/scenes/scenes-api.ts#L42">scenes/scenes-api.ts:42</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_scenes_scenes_api_.isceneitemapi.html" class="tsd-signature-type">ISceneItemApi</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -285,10 +356,93 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/scenes/scenes-api.ts#L42">scenes/scenes-api.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/scenes/scenes-api.ts#L52">scenes/scenes-api.ts:52</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_scenes_scenes_api_.iscene.html" class="tsd-signature-type">IScene</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getnode" class="tsd-anchor"></a>
+					<h3>get<wbr>Node</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Node<span class="tsd-signature-symbol">(</span>sceneNodeId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_scenes_scenes_api_.isceneitemapi.html" class="tsd-signature-type">ISceneItemApi</a><span class="tsd-signature-symbol"> | </span><a href="_scenes_scenes_api_.isceneitemfolderapi.html" class="tsd-signature-type">ISceneItemFolderApi</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/scenes/scenes-api.ts#L38">scenes/scenes-api.ts:38</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sceneNodeId: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_scenes_scenes_api_.isceneitemapi.html" class="tsd-signature-type">ISceneItemApi</a>
+								<span class="tsd-signature-symbol"> | </span>
+								<a href="_scenes_scenes_api_.isceneitemfolderapi.html" class="tsd-signature-type">ISceneItemFolderApi</a>
+							</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getnodes" class="tsd-anchor"></a>
+					<h3>get<wbr>Nodes</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Nodes<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><a href="_scenes_scenes_api_.isceneitemapi.html" class="tsd-signature-type">ISceneItemApi</a><span class="tsd-signature-symbol"> | </span><a href="_scenes_scenes_api_.isceneitemfolderapi.html" class="tsd-signature-type">ISceneItemFolderApi</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/scenes/scenes-api.ts#L41">scenes/scenes-api.ts:41</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span><a href="_scenes_scenes_api_.isceneitemapi.html" class="tsd-signature-type">ISceneItemApi</a><span class="tsd-signature-symbol"> | </span><a href="_scenes_scenes_api_.isceneitemfolderapi.html" class="tsd-signature-type">ISceneItemFolderApi</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getselection" class="tsd-anchor"></a>
+					<h3>get<wbr>Selection</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Selection<span class="tsd-signature-symbol">(</span>itemsList<span class="tsd-signature-symbol">: </span><a href="../modules/_selection_selection_api_.html#tnodeslist" class="tsd-signature-type">TNodesList</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_selection_selection_api_.iselection.html" class="tsd-signature-type">ISelection</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/scenes/scenes-api.ts#L54">scenes/scenes-api.ts:54</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>itemsList: <a href="../modules/_selection_selection_api_.html#tnodeslist" class="tsd-signature-type">TNodesList</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_selection_selection_api_.iselection.html" class="tsd-signature-type">ISelection</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="makeactive" class="tsd-anchor"></a>
+					<h3>make<wbr>Active</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">make<wbr>Active<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/scenes/scenes-api.ts#L53">scenes/scenes-api.ts:53</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -302,9 +456,32 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/scenes/scenes-api.ts#L39">scenes/scenes-api.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/scenes/scenes-api.ts#L49">scenes/scenes-api.ts:49</a></li>
 								</ul>
 							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="removefolder" class="tsd-anchor"></a>
+					<h3>remove<wbr>Folder</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Folder<span class="tsd-signature-symbol">(</span>folderId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/scenes/scenes-api.ts#L47">scenes/scenes-api.ts:47</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>folderId: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -319,7 +496,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/scenes/scenes-api.ts#L38">scenes/scenes-api.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/scenes/scenes-api.ts#L48">scenes/scenes-api.ts:48</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -342,7 +519,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/scenes/scenes-api.ts#L41">scenes/scenes-api.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/scenes/scenes-api.ts#L51">scenes/scenes-api.ts:51</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -388,10 +565,10 @@
 								<a href="_scenes_scenes_api_.isceneapi.html#id" class="tsd-kind-icon">id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_scenes_scenes_api_.isceneapi.html#items" class="tsd-kind-icon">items</a>
+								<a href="_scenes_scenes_api_.isceneapi.html#name" class="tsd-kind-icon">name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_scenes_scenes_api_.isceneapi.html#name" class="tsd-kind-icon">name</a>
+								<a href="_scenes_scenes_api_.isceneapi.html#nodes" class="tsd-kind-icon">nodes</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="_scenes_scenes_api_.isceneapi.html#addsource" class="tsd-kind-icon">add<wbr>Source</a>
@@ -403,6 +580,15 @@
 								<a href="_scenes_scenes_api_.isceneapi.html#createandaddsource" class="tsd-kind-icon">create<wbr>And<wbr>Add<wbr>Source</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_scenes_scenes_api_.isceneapi.html#createfolder" class="tsd-kind-icon">create<wbr>Folder</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_scenes_scenes_api_.isceneapi.html#getfolder" class="tsd-kind-icon">get<wbr>Folder</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_scenes_scenes_api_.isceneapi.html#getfolders" class="tsd-kind-icon">get<wbr>Folders</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="_scenes_scenes_api_.isceneapi.html#getitem" class="tsd-kind-icon">get<wbr>Item</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
@@ -412,7 +598,22 @@
 								<a href="_scenes_scenes_api_.isceneapi.html#getmodel" class="tsd-kind-icon">get<wbr>Model</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_scenes_scenes_api_.isceneapi.html#getnode" class="tsd-kind-icon">get<wbr>Node</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_scenes_scenes_api_.isceneapi.html#getnodes" class="tsd-kind-icon">get<wbr>Nodes</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_scenes_scenes_api_.isceneapi.html#getselection" class="tsd-kind-icon">get<wbr>Selection</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_scenes_scenes_api_.isceneapi.html#makeactive" class="tsd-kind-icon">make<wbr>Active</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="_scenes_scenes_api_.isceneapi.html#remove" class="tsd-kind-icon">remove</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_scenes_scenes_api_.isceneapi.html#removefolder" class="tsd-kind-icon">remove<wbr>Folder</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="_scenes_scenes_api_.isceneapi.html#removeitem" class="tsd-kind-icon">remove<wbr>Item</a>
@@ -434,16 +635,28 @@
 						<a href="_scenes_scenes_api_.isceneitemactions.html" class="tsd-kind-icon">IScene<wbr>Item<wbr>Actions</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_scenes_scenes_api_.isceneitemaddoptions.html" class="tsd-kind-icon">IScene<wbr>Item<wbr>Add<wbr>Options</a>
+						<a href="_scenes_scenes_api_.isceneitemapi.html" class="tsd-kind-icon">IScene<wbr>Item<wbr>Api</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_scenes_scenes_api_.isceneitemapi.html" class="tsd-kind-icon">IScene<wbr>Item<wbr>Api</a>
+						<a href="_scenes_scenes_api_.isceneitemfolder.html" class="tsd-kind-icon">IScene<wbr>Item<wbr>Folder</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_scenes_scenes_api_.isceneitemfolderapi.html" class="tsd-kind-icon">IScene<wbr>Item<wbr>Folder<wbr>Api</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_scenes_scenes_api_.isceneiteminfo.html" class="tsd-kind-icon">IScene<wbr>Item<wbr>Info</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_scenes_scenes_api_.isceneitemnode.html" class="tsd-kind-icon">IScene<wbr>Item<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_scenes_scenes_api_.isceneitemsettings.html" class="tsd-kind-icon">IScene<wbr>Item<wbr>Settings</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_scenes_scenes_api_.iscenenodeaddoptions.html" class="tsd-kind-icon">IScene<wbr>Node<wbr>Add<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_scenes_scenes_api_.iscenenodeapi.html" class="tsd-kind-icon">IScene<wbr>Node<wbr>Api</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_scenes_scenes_api_.iscenesserviceapi.html" class="tsd-kind-icon">IScenes<wbr>Service<wbr>Api</a>
@@ -453,6 +666,15 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_scenes_scenes_api_.itransform.html" class="tsd-kind-icon">ITransform</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_scenes_scenes_api_.html#tscenenodeapi" class="tsd-kind-icon">TScene<wbr>Node<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_scenes_scenes_api_.html#tscenenodemodel" class="tsd-kind-icon">TScene<wbr>Node<wbr>Model</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_scenes_scenes_api_.html#tscenenodetype" class="tsd-kind-icon">TScene<wbr>Node<wbr>Type</a>
 					</li>
 				</ul>
 			</nav>

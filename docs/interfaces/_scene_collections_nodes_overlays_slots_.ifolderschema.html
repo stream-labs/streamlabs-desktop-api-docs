@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ISelectionServiceState | slobs-client</title>
+	<title>IFolderSchema | slobs-client</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -61,13 +61,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_selection_selection_.html">&quot;selection/selection&quot;</a>
+					<a href="../modules/_scene_collections_nodes_overlays_slots_.html">&quot;scene-collections/nodes/overlays/slots&quot;</a>
 				</li>
 				<li>
-					<a href="_selection_selection_.iselectionservicestate.html">ISelectionServiceState</a>
+					<a href="_scene_collections_nodes_overlays_slots_.ifolderschema.html">IFolderSchema</a>
 				</li>
 			</ul>
-			<h1>Interface ISelectionServiceState</h1>
+			<h1>Interface IFolderSchema</h1>
 		</div>
 	</div>
 </header>
@@ -78,7 +78,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ISelectionServiceState</span>
+						<span class="target">IFolderSchema</span>
 					</li>
 				</ul>
 			</section>
@@ -86,35 +86,57 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-not-exported">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_selection_selection_.iselectionservicestate.html#lastselectedid" class="tsd-kind-icon">last<wbr>Selected<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_selection_selection_.iselectionservicestate.html#selectedids" class="tsd-kind-icon">selected<wbr>Ids</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scene_collections_nodes_overlays_slots_.ifolderschema.html#childrenids" class="tsd-kind-icon">children<wbr>Ids</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scene_collections_nodes_overlays_slots_.ifolderschema.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scene_collections_nodes_overlays_slots_.ifolderschema.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scene_collections_nodes_overlays_slots_.ifolderschema.html#scenenodetype" class="tsd-kind-icon">scene<wbr>Node<wbr>Type</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="lastselectedid" class="tsd-anchor"></a>
-					<h3>last<wbr>Selected<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">last<wbr>Selected<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="childrenids" class="tsd-anchor"></a>
+					<h3>children<wbr>Ids</h3>
+					<div class="tsd-signature tsd-kind-icon">children<wbr>Ids<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/selection/selection.ts#L17">selection/selection.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/scene-collections/nodes/overlays/slots.ts#L40">scene-collections/nodes/overlays/slots.ts:40</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="selectedids" class="tsd-anchor"></a>
-					<h3>selected<wbr>Ids</h3>
-					<div class="tsd-signature tsd-kind-icon">selected<wbr>Ids<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="id" class="tsd-anchor"></a>
+					<h3>id</h3>
+					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cc02c8d/app/services/selection/selection.ts#L18">selection/selection.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/scene-collections/nodes/overlays/slots.ts#L37">scene-collections/nodes/overlays/slots.ts:37</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="name" class="tsd-anchor"></a>
+					<h3>name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/scene-collections/nodes/overlays/slots.ts#L38">scene-collections/nodes/overlays/slots.ts:38</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="scenenodetype" class="tsd-anchor"></a>
+					<h3>scene<wbr>Node<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">scene<wbr>Node<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../modules/_scenes_scenes_api_.html#tscenenodetype" class="tsd-signature-type">TSceneNodeType</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/scene-collections/nodes/overlays/slots.ts#L39">scene-collections/nodes/overlays/slots.ts:39</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -127,30 +149,48 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_selection_selection_.html">"selection/selection"</a>
+						<a href="../modules/_scene_collections_nodes_overlays_slots_.html">"scene-<wbr>collections/nodes/overlays/slots"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_selection_selection_.selectionservice.html" class="tsd-kind-icon">Selection<wbr>Service</a>
+						<a href="../classes/_scene_collections_nodes_overlays_slots_.slotsnode.html" class="tsd-kind-icon">Slots<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_scene_collections_nodes_overlays_slots_.icontext.html" class="tsd-kind-icon">IContext</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_selection_selection_.iselectionservicestate.html" class="tsd-kind-icon">ISelection<wbr>Service<wbr>State</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_scene_collections_nodes_overlays_slots_.ifolderschema.html" class="tsd-kind-icon">IFolder<wbr>Schema</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="_selection_selection_.iselectionservicestate.html#lastselectedid" class="tsd-kind-icon">last<wbr>Selected<wbr>Id</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_scene_collections_nodes_overlays_slots_.ifolderschema.html#childrenids" class="tsd-kind-icon">children<wbr>Ids</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="_selection_selection_.iselectionservicestate.html#selectedids" class="tsd-kind-icon">selected<wbr>Ids</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_scene_collections_nodes_overlays_slots_.ifolderschema.html#id" class="tsd-kind-icon">id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_scene_collections_nodes_overlays_slots_.ifolderschema.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_scene_collections_nodes_overlays_slots_.ifolderschema.html#scenenodetype" class="tsd-kind-icon">scene<wbr>Node<wbr>Type</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_scene_collections_nodes_overlays_slots_.iitemschema.html" class="tsd-kind-icon">IItem<wbr>Schema</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_scene_collections_nodes_overlays_slots_.html#tcontent" class="tsd-kind-icon">TContent</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_scene_collections_nodes_overlays_slots_.html#tslotschema" class="tsd-kind-icon">TSlot<wbr>Schema</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
