@@ -94,6 +94,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_utils_.utils.html#binnaryarraytonumber" class="tsd-kind-icon">binnary<wbr>Array<wbr>ToNumber</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static"><a href="_utils_.utils.html#getchangedparams" class="tsd-kind-icon">get<wbr>Changed<wbr>Params</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_utils_.utils.html#getcurrenturlparams" class="tsd-kind-icon">get<wbr>Current<wbr>Url<wbr>Params</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static"><a href="_utils_.utils.html#getdeepchangedparams" class="tsd-kind-icon">get<wbr>Deep<wbr>Changed<wbr>Params</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_utils_.utils.html#geturlparams" class="tsd-kind-icon">get<wbr>Url<wbr>Params</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_utils_.utils.html#inttorgba" class="tsd-kind-icon">int<wbr>ToRgba</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_utils_.utils.html#ischildwindow" class="tsd-kind-icon">is<wbr>Child<wbr>Window</a></li>
@@ -119,7 +120,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/utils.ts#L103">utils.ts:103</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/utils.ts#L120">utils.ts:120</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -152,7 +153,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/utils.ts#L9">utils.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/utils.ts#L9">utils.ts:9</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -178,7 +179,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/utils.ts#L81">utils.ts:81</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/utils.ts#L81">utils.ts:81</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -201,7 +202,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/utils.ts#L92">utils.ts:92</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/utils.ts#L92">utils.ts:92</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -233,10 +234,42 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/utils.ts#L19">utils.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/utils.ts#L19">utils.ts:19</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+					<a name="getdeepchangedparams" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Deep<wbr>Changed<wbr>Params</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Deep<wbr>Changed<wbr>Params&lt;T&gt;<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, patch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/utils.ts#L100">utils.ts:100</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>obj: <span class="tsd-signature-type">T</span></h5>
+								</li>
+								<li>
+									<h5>patch: <span class="tsd-signature-type">T</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -250,7 +283,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/utils.ts#L24">utils.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/utils.ts#L24">utils.ts:24</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -273,7 +306,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/utils.ts#L59">utils.ts:59</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/utils.ts#L59">utils.ts:59</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -315,7 +348,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/utils.ts#L32">utils.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/utils.ts#L32">utils.ts:32</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -332,7 +365,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/utils.ts#L36">utils.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/utils.ts#L36">utils.ts:36</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -349,7 +382,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/utils.ts#L28">utils.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/utils.ts#L28">utils.ts:28</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -366,7 +399,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/utils.ts#L40">utils.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/utils.ts#L40">utils.ts:40</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -383,7 +416,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/utils.ts#L69">utils.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/utils.ts#L69">utils.ts:69</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -409,7 +442,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/utils.ts#L47">utils.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/utils.ts#L47">utils.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -473,6 +506,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="_utils_.utils.html#getcurrenturlparams" class="tsd-kind-icon">get<wbr>Current<wbr>Url<wbr>Params</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+								<a href="_utils_.utils.html#getdeepchangedparams" class="tsd-kind-icon">get<wbr>Deep<wbr>Changed<wbr>Params</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="_utils_.utils.html#geturlparams" class="tsd-kind-icon">get<wbr>Url<wbr>Params</a>

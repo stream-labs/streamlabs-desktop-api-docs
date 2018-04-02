@@ -114,6 +114,7 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_selection_selection_.selectionservice.html#add" class="tsd-kind-icon">add</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_selection_selection_.selectionservice.html#cangroupintofolder" class="tsd-kind-icon">can<wbr>Group<wbr>Into<wbr>Folder</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_selection_selection_.selectionservice.html#centeronscreen" class="tsd-kind-icon">center<wbr>OnScreen</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_selection_selection_.selectionservice.html#clone" class="tsd-kind-icon">clone</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_selection_selection_.selectionservice.html#copyreferenceto" class="tsd-kind-icon">copy<wbr>Reference<wbr>To</a></li>
@@ -123,6 +124,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_selection_selection_.selectionservice.html#flipx" class="tsd-kind-icon">flipX</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_selection_selection_.selectionservice.html#flipy" class="tsd-kind-icon">flipY</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_selection_selection_.selectionservice.html#getboundingrect" class="tsd-kind-icon">get<wbr>Bounding<wbr>Rect</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_selection_selection_.selectionservice.html#getclosestparent" class="tsd-kind-icon">get<wbr>Closest<wbr>Parent</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_selection_selection_.selectionservice.html#getfolders" class="tsd-kind-icon">get<wbr>Folders</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_selection_selection_.selectionservice.html#getids" class="tsd-kind-icon">get<wbr>Ids</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_selection_selection_.selectionservice.html#getinverted" class="tsd-kind-icon">get<wbr>Inverted</a></li>
@@ -204,7 +206,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/service.ts#L74">service.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/service.ts#L74">service.ts:74</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -227,7 +229,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#add">add</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L45">selection/selection.ts:45</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L45">selection/selection.ts:45</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -253,13 +255,38 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="cangroupintofolder" class="tsd-anchor"></a>
+					<h3>can<wbr>Group<wbr>Into<wbr>Folder</h3>
+					<div class="tsd-signature tsd-kind-icon">can<wbr>Group<wbr>Into<wbr>Folder<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L68">selection/selection.ts:68</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="centeronscreen" class="tsd-anchor"></a>
 					<h3>center<wbr>OnScreen</h3>
 					<div class="tsd-signature tsd-kind-icon">center<wbr>OnScreen<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#centeronscreen">centerOnScreen</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L80">selection/selection.ts:80</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L82">selection/selection.ts:82</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -285,7 +312,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#clone">clone</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L49">selection/selection.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L49">selection/selection.ts:49</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -311,7 +338,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#copyreferenceto">copyReferenceTo</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L63">selection/selection.ts:63</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L63">selection/selection.ts:63</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -319,7 +346,7 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>sceneId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, folderId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_scenes_scene_item_.sceneitem.html" class="tsd-signature-type">SceneItem</a><span class="tsd-signature-symbol">[]</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>sceneId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, folderId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_scenes_scene_.html#tscenenode" class="tsd-signature-type">TSceneNode</a><span class="tsd-signature-symbol">[]</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
@@ -332,7 +359,7 @@
 												<h5><span class="tsd-flag ts-flagOptional">Optional</span> folderId: <span class="tsd-signature-type">string</span></h5>
 											</li>
 										</ul>
-										<h4 class="tsd-returns-title">Returns <a href="_scenes_scene_item_.sceneitem.html" class="tsd-signature-type">SceneItem</a><span class="tsd-signature-symbol">[]</span></h4>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_scenes_scene_.html#tscenenode" class="tsd-signature-type">TSceneNode</a><span class="tsd-signature-symbol">[]</span></h4>
 									</li>
 								</ul>
 							</li>
@@ -346,7 +373,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#copyto">copyTo</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L64">selection/selection.ts:64</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L64">selection/selection.ts:64</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -378,7 +405,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#deselect">deselect</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L46">selection/selection.ts:46</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L46">selection/selection.ts:46</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -410,7 +437,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#fittoscreen">fitToScreen</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L79">selection/selection.ts:79</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L81">selection/selection.ts:81</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -436,7 +463,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#flipx">flipX</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L77">selection/selection.ts:77</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L79">selection/selection.ts:79</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -462,7 +489,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#flipy">flipY</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L76">selection/selection.ts:76</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L78">selection/selection.ts:78</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -488,7 +515,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#getboundingrect">getBoundingRect</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L58">selection/selection.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L58">selection/selection.ts:58</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -508,13 +535,38 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="getclosestparent" class="tsd-anchor"></a>
+					<h3>get<wbr>Closest<wbr>Parent</h3>
+					<div class="tsd-signature tsd-kind-icon">get<wbr>Closest<wbr>Parent<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L69">selection/selection.ts:69</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_scenes_scene_folder_.sceneitemfolder.html" class="tsd-signature-type">SceneItemFolder</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <a href="_scenes_scene_folder_.sceneitemfolder.html" class="tsd-signature-type">SceneItemFolder</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="getfolders" class="tsd-anchor"></a>
 					<h3>get<wbr>Folders</h3>
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Folders<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#getfolders">getFolders</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L53">selection/selection.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L53">selection/selection.ts:53</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -540,7 +592,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#getids">getIds</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L55">selection/selection.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L55">selection/selection.ts:55</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -566,7 +618,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#getinverted">getInverted</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L57">selection/selection.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L57">selection/selection.ts:57</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -592,7 +644,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#getinvertedids">getInvertedIds</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L56">selection/selection.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L56">selection/selection.ts:56</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -618,7 +670,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#getitems">getItems</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L51">selection/selection.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L51">selection/selection.ts:51</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -644,7 +696,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#getlastselected">getLastSelected</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L59">selection/selection.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L59">selection/selection.ts:59</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -670,7 +722,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#getlastselectedid">getLastSelectedId</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L60">selection/selection.ts:60</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L60">selection/selection.ts:60</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -695,7 +747,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Nodes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L52">selection/selection.ts:52</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L52">selection/selection.ts:52</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -721,7 +773,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#getsize">getSize</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L61">selection/selection.ts:61</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L61">selection/selection.ts:61</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -747,7 +799,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#getvisualitems">getVisualItems</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L54">selection/selection.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L54">selection/selection.ts:54</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -773,7 +825,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#invert">invert</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L50">selection/selection.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L50">selection/selection.ts:50</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -799,7 +851,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#isscenefolder">isSceneFolder</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L67">selection/selection.ts:67</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L67">selection/selection.ts:67</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -825,7 +877,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#issceneitem">isSceneItem</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L66">selection/selection.ts:66</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L66">selection/selection.ts:66</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -851,7 +903,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#isselected">isSelected</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L62">selection/selection.ts:62</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L62">selection/selection.ts:62</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -883,7 +935,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#moveto">moveTo</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L65">selection/selection.ts:65</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L65">selection/selection.ts:65</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -891,7 +943,7 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>sceneId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, folderId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_scenes_scene_item_.sceneitem.html" class="tsd-signature-type">SceneItem</a><span class="tsd-signature-symbol">[]</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>sceneId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, folderId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_scenes_scene_.html#tscenenode" class="tsd-signature-type">TSceneNode</a><span class="tsd-signature-symbol">[]</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
@@ -904,7 +956,7 @@
 												<h5><span class="tsd-flag ts-flagOptional">Optional</span> folderId: <span class="tsd-signature-type">string</span></h5>
 											</li>
 										</ul>
-										<h4 class="tsd-returns-title">Returns <a href="_scenes_scene_item_.sceneitem.html" class="tsd-signature-type">SceneItem</a><span class="tsd-signature-symbol">[]</span></h4>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_scenes_scene_.html#tscenenode" class="tsd-signature-type">TSceneNode</a><span class="tsd-signature-symbol">[]</span></h4>
 									</li>
 								</ul>
 							</li>
@@ -918,7 +970,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#reset">reset</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L47">selection/selection.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L47">selection/selection.ts:47</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -944,7 +996,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#resettransform">resetTransform</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L75">selection/selection.ts:75</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L77">selection/selection.ts:77</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -970,7 +1022,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#rotate">rotate</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L81">selection/selection.ts:81</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L83">selection/selection.ts:83</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -1002,7 +1054,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#selectall">selectAll</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L48">selection/selection.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L48">selection/selection.ts:48</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -1028,7 +1080,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#servicename">serviceName</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/service.ts#L26">service.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/service.ts#L26">service.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1039,7 +1091,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#setcontentcrop">setContentCrop</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L82">selection/selection.ts:82</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L84">selection/selection.ts:84</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -1065,7 +1117,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#setsettings">setSettings</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L72">selection/selection.ts:72</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L74">selection/selection.ts:74</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -1097,7 +1149,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#settransform">setTransform</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L74">selection/selection.ts:74</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L76">selection/selection.ts:76</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -1129,7 +1181,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#setvisibility">setVisibility</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L73">selection/selection.ts:73</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L75">selection/selection.ts:75</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -1161,7 +1213,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#stretchtoscreen">stretchToScreen</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L78">selection/selection.ts:78</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L80">selection/selection.ts:80</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -1186,7 +1238,7 @@
 					<div class="tsd-signature tsd-kind-icon">updated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Subject</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_selection_selection_api_.iselectionstate.html" class="tsd-signature-type">ISelectionState</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Subject&lt;ISelectionState&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L32">selection/selection.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L32">selection/selection.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1197,7 +1249,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#hasinstance">hasInstance</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/service.ts#L11">service.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/service.ts#L11">service.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1208,7 +1260,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#issingleton">isSingleton</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/service.ts#L12">service.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/service.ts#L12">service.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1219,7 +1271,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#serviceafterinit">serviceAfterInit</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/service.ts#L17">service.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/service.ts#L17">service.ts:17</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1243,7 +1295,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_stateful_service_.statefulservice.html">StatefulService</a>.<a href="_stateful_service_.statefulservice.html#state">state</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/stateful-service.ts#L78">stateful-service.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/stateful-service.ts#L78">stateful-service.ts:78</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_selection_selection_api_.iselectionstate.html" class="tsd-signature-type">ISelectionState</a></h4>
@@ -1252,7 +1304,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_stateful_service_.statefulservice.html">StatefulService</a>.<a href="_stateful_service_.statefulservice.html#state">state</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/stateful-service.ts#L83">stateful-service.ts:83</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/stateful-service.ts#L83">stateful-service.ts:83</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1276,7 +1328,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_stateful_service_.statefulservice.html">StatefulService</a>.<a href="_stateful_service_.statefulservice.html#store">store</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/stateful-service.ts#L74">stateful-service.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/stateful-service.ts#L74">stateful-service.ts:74</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Store</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1294,7 +1346,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#instance">instance</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/service.ts#L28">service.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/service.ts#L28">service.ts:28</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -1315,7 +1367,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#afterinit">afterInit</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/service.ts#L94">service.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/service.ts#L94">service.ts:94</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1339,7 +1391,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#init">init</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L37">selection/selection.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L37">selection/selection.ts:37</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1357,7 +1409,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#mounted">mounted</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/service.ts#L88">service.ts:88</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/service.ts#L88">service.ts:88</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1379,7 +1431,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L96">selection/selection.ts:96</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L98">selection/selection.ts:98</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -1396,7 +1448,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L106">selection/selection.ts:106</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L108">selection/selection.ts:108</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -1413,7 +1465,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L91">selection/selection.ts:91</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L93">selection/selection.ts:93</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -1430,7 +1482,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L101">selection/selection.ts:101</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L103">selection/selection.ts:103</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -1448,7 +1500,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#remove">remove</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L86">selection/selection.ts:86</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L88">selection/selection.ts:88</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -1466,7 +1518,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html">ISelectionServiceApi</a>.<a href="../interfaces/_selection_selection_api_.iselectionserviceapi.html#select">select</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L113">selection/selection.ts:113</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L115">selection/selection.ts:115</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1497,7 +1549,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#createinstance">createInstance</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/service.ts#L52">service.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/service.ts#L52">service.ts:52</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1526,7 +1578,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#getresourceid">getResourceId</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/service.ts#L70">service.ts:70</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/service.ts#L70">service.ts:70</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1550,7 +1602,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_stateful_service_.statefulservice.html">StatefulService</a>.<a href="_stateful_service_.statefulservice.html#getstore">getStore</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/stateful-service.ts#L69">stateful-service.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/stateful-service.ts#L69">stateful-service.ts:69</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Store</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1568,7 +1620,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#setupinitfunction">setupInitFunction</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/service.ts#L45">service.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/service.ts#L45">service.ts:45</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1615,7 +1667,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_service_.service.html">Service</a>.<a href="_service_.service.html#setupproxy">setupProxy</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/service.ts#L38">service.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/service.ts#L38">service.ts:38</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1662,7 +1714,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_stateful_service_.statefulservice.html">StatefulService</a>.<a href="_stateful_service_.statefulservice.html#setupvuexstore">setupVuexStore</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/stateful-service.ts#L65">stateful-service.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/stateful-service.ts#L65">stateful-service.ts:65</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1684,7 +1736,7 @@
 					<div class="tsd-signature tsd-kind-icon">initial<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L27">selection/selection.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L27">selection/selection.ts:27</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -1693,7 +1745,7 @@
 						<div class="tsd-signature tsd-kind-icon">last<wbr>Selected<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L29">selection/selection.ts:29</a></li>
+								<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L29">selection/selection.ts:29</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -1703,7 +1755,7 @@
 						<div class="tsd-signature tsd-kind-icon">selected<wbr>Ids<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/6ec4ed1/app/services/selection/selection.ts#L28">selection/selection.ts:28</a></li>
+								<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/selection/selection.ts#L28">selection/selection.ts:28</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -1738,6 +1790,9 @@
 								<a href="_selection_selection_.selectionservice.html#add" class="tsd-kind-icon">add</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_selection_selection_.selectionservice.html#cangroupintofolder" class="tsd-kind-icon">can<wbr>Group<wbr>Into<wbr>Folder</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_selection_selection_.selectionservice.html#centeronscreen" class="tsd-kind-icon">center<wbr>OnScreen</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -1763,6 +1818,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_selection_selection_.selectionservice.html#getboundingrect" class="tsd-kind-icon">get<wbr>Bounding<wbr>Rect</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_selection_selection_.selectionservice.html#getclosestparent" class="tsd-kind-icon">get<wbr>Closest<wbr>Parent</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_selection_selection_.selectionservice.html#getfolders" class="tsd-kind-icon">get<wbr>Folders</a>
