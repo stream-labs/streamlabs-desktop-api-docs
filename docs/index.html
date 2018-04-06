@@ -270,7 +270,23 @@
         },
     }
 }
-</code></pre><h1 id="faq">FAQ</h1>
+</code></pre><h1 id="remote-connections">Remote connections</h1>
+				<p>Streamlabs OBS allows remote connection via websokets protocol powered by <a href="https://github.com/sockjs">Sockjs</a>.
+					To enable remote connections run Streamlabs OBS with <code>--adv-settings</code> parameter, go to <code>Settings-&gt;API</code>,
+					enable Websokets and check <code>Allow Remote Connections</code>.
+				Use API token from this window to authorize you connection:</p>
+				<h3 id="request">Request</h3>
+				<pre><code>{
+    <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
+    <span class="hljs-attr">"id"</span>: <span class="hljs-number">8</span>,
+    <span class="hljs-attr">"method"</span>: <span class="hljs-string">"auth"</span>,
+    <span class="hljs-attr">"params"</span>: {
+        <span class="hljs-attr">"resource"</span>: <span class="hljs-string">"TcpServerService"</span>,
+        <span class="hljs-attr">"args"</span>: [<span class="hljs-string">"your_secret_token_here"</span>]
+    }
+}
+</code></pre><p>Local connections to &#39;127.0.0.1&#39; don&#39;t require authorization.</p>
+				<h1 id="faq">FAQ</h1>
 				<h2 id="what-is-the-difference-between-sources-and-sceneitems-">What is the difference between Sources and SceneItems?</h2>
 				<p>One thing to keep in mind in OBS is that sources and scene items are different things.
 					A source exists outside the context of a scene. Muted is a property of a source.
@@ -469,7 +485,13 @@
 						<a href="modules/_cache_uploader_.html">"cache-<wbr>uploader"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_clipboard_.html">"clipboard"</a>
+						<a href="modules/_clipboard_clipboard_.html">"clipboard/clipboard"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_clipboard_clipboard_api_.html">"clipboard/clipboard-<wbr>api"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_clipboard_index_.html">"clipboard/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_customization_customization_.html">"customization/customization"</a>
@@ -733,7 +755,13 @@
 						<a href="modules/_streamlabels_index_.html">"streamlabels/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_tcp_server_.html">"tcp-<wbr>server"</a>
+						<a href="modules/_tcp_server_index_.html">"tcp-<wbr>server/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_tcp_server_tcp_server_.html">"tcp-<wbr>server/tcp-<wbr>server"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_tcp_server_tcp_server_api_.html">"tcp-<wbr>server/tcp-<wbr>server-<wbr>api"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_troubleshooter_index_.html">"troubleshooter/index"</a>

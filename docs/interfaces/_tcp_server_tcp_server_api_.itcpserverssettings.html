@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IClipboardState | slobs-client</title>
+	<title>ITcpServersSettings | slobs-client</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -61,13 +61,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_clipboard_.html">&quot;clipboard&quot;</a>
+					<a href="../modules/_tcp_server_tcp_server_api_.html">&quot;tcp-server/tcp-server-api&quot;</a>
 				</li>
 				<li>
-					<a href="_clipboard_.iclipboardstate.html">IClipboardState</a>
+					<a href="_tcp_server_tcp_server_api_.itcpserverssettings.html">ITcpServersSettings</a>
 				</li>
 			</ul>
-			<h1>Interface IClipboardState</h1>
+			<h1>Interface ITcpServersSettings</h1>
 		</div>
 	</div>
 </header>
@@ -78,7 +78,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IClipboardState</span>
+						<span class="target">ITcpServersSettings</span>
 					</li>
 				</ul>
 			</section>
@@ -86,48 +86,73 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-not-exported">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_clipboard_.iclipboardstate.html#filterids" class="tsd-kind-icon">filter<wbr>Ids</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_clipboard_.iclipboardstate.html#itemssceneid" class="tsd-kind-icon">items<wbr>Scene<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_clipboard_.iclipboardstate.html#sceneitemids" class="tsd-kind-icon">scene<wbr>Item<wbr>Ids</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_tcp_server_tcp_server_api_.itcpserverssettings.html#namedpipe" class="tsd-kind-icon">named<wbr>Pipe</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_tcp_server_tcp_server_api_.itcpserverssettings.html#token" class="tsd-kind-icon">token</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_tcp_server_tcp_server_api_.itcpserverssettings.html#websockets" class="tsd-kind-icon">websockets</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="filterids" class="tsd-anchor"></a>
-					<h3>filter<wbr>Ids</h3>
-					<div class="tsd-signature tsd-kind-icon">filter<wbr>Ids<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="namedpipe" class="tsd-anchor"></a>
+					<h3>named<wbr>Pipe</h3>
+					<div class="tsd-signature tsd-kind-icon">named<wbr>Pipe<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/clipboard.ts#L14">clipboard.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/tcp-server/tcp-server-api.ts#L6">tcp-server/tcp-server-api.ts:6</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>enabled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>pipe<wbr>Name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="token" class="tsd-anchor"></a>
+					<h3>token</h3>
+					<div class="tsd-signature tsd-kind-icon">token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/tcp-server/tcp-server-api.ts#L5">tcp-server/tcp-server-api.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="itemssceneid" class="tsd-anchor"></a>
-					<h3>items<wbr>Scene<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">items<wbr>Scene<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="websockets" class="tsd-anchor"></a>
+					<h3>websockets</h3>
+					<div class="tsd-signature tsd-kind-icon">websockets<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/clipboard.ts#L12">clipboard.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/tcp-server/tcp-server-api.ts#L10">tcp-server/tcp-server-api.ts:10</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="sceneitemids" class="tsd-anchor"></a>
-					<h3>scene<wbr>Item<wbr>Ids</h3>
-					<div class="tsd-signature tsd-kind-icon">scene<wbr>Item<wbr>Ids<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/clipboard.ts#L13">clipboard.ts:13</a></li>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>allow<wbr>Remote<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>enabled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+							</li>
 						</ul>
-					</aside>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -138,28 +163,31 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_clipboard_.html">"clipboard"</a>
+						<a href="../modules/_tcp_server_tcp_server_api_.html">"tcp-<wbr>server/tcp-<wbr>server-<wbr>api"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_clipboard_.clipboardservice.html" class="tsd-kind-icon">Clipboard<wbr>Service</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_tcp_server_tcp_server_api_.iipaddressdescription.html" class="tsd-kind-icon">IIPAddress<wbr>Description</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_tcp_server_tcp_server_api_.itcpserverserviceapi.html" class="tsd-kind-icon">ITcp<wbr>Server<wbr>Service<wbr>Api</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_clipboard_.iclipboardstate.html" class="tsd-kind-icon">IClipboard<wbr>State</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_tcp_server_tcp_server_api_.itcpserverssettings.html" class="tsd-kind-icon">ITcp<wbr>Servers<wbr>Settings</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="_clipboard_.iclipboardstate.html#filterids" class="tsd-kind-icon">filter<wbr>Ids</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_tcp_server_tcp_server_api_.itcpserverssettings.html#namedpipe" class="tsd-kind-icon">named<wbr>Pipe</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="_clipboard_.iclipboardstate.html#itemssceneid" class="tsd-kind-icon">items<wbr>Scene<wbr>Id</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_tcp_server_tcp_server_api_.itcpserverssettings.html#token" class="tsd-kind-icon">token</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="_clipboard_.iclipboardstate.html#sceneitemids" class="tsd-kind-icon">scene<wbr>Item<wbr>Ids</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_tcp_server_tcp_server_api_.itcpserverssettings.html#websockets" class="tsd-kind-icon">websockets</a>
 							</li>
 						</ul>
 					</li>

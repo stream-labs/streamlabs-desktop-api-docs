@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ITcpServerServiceAPI | slobs-client</title>
+	<title>IServer | slobs-client</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -61,30 +61,24 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_tcp_server_.html">&quot;tcp-server&quot;</a>
+					<a href="../modules/_tcp_server_tcp_server_.html">&quot;tcp-server/tcp-server&quot;</a>
 				</li>
 				<li>
-					<a href="_tcp_server_.itcpserverserviceapi.html">ITcpServerServiceAPI</a>
+					<a href="_tcp_server_tcp_server_.iserver.html">IServer</a>
 				</li>
 			</ul>
-			<h1>Interface ITcpServerServiceAPI</h1>
+			<h1>Interface IServer</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-implemented-by">
-				<h3>Implemented by</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../classes/_tcp_server_.tcpserverservice.html" class="tsd-signature-type">TcpServerService</a></li>
-				</ul>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ITcpServerServiceAPI</span>
+						<span class="target">IServer</span>
 					</li>
 				</ul>
 			</section>
@@ -92,106 +86,105 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_tcp_server_tcp_server_.iserver.html#nativeserver" class="tsd-kind-icon">native<wbr>Server</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_tcp_server_tcp_server_.iserver.html#type" class="tsd-kind-icon">type</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_tcp_server_.itcpserverserviceapi.html#getapisettingsformdata" class="tsd-kind-icon">get<wbr>Api<wbr>Settings<wbr>Form<wbr>Data</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_tcp_server_.itcpserverserviceapi.html#getdefaultsettings" class="tsd-kind-icon">get<wbr>Default<wbr>Settings</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_tcp_server_.itcpserverserviceapi.html#listen" class="tsd-kind-icon">listen</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_tcp_server_.itcpserverserviceapi.html#setsettings" class="tsd-kind-icon">set<wbr>Settings</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_tcp_server_.itcpserverserviceapi.html#stoplistening" class="tsd-kind-icon">stop<wbr>Listening</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="_tcp_server_tcp_server_.iserver.html#close" class="tsd-kind-icon">close</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="nativeserver" class="tsd-anchor"></a>
+					<h3>native<wbr>Server</h3>
+					<div class="tsd-signature tsd-kind-icon">native<wbr>Server<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/tcp-server/tcp-server.ts#L41">tcp-server/tcp-server.ts:41</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>on<span class="tsd-signature-symbol">: </span>function</h5>
+								<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>eventName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/tcp-server/tcp-server.ts#L42">tcp-server/tcp-server.ts:42</a></li>
+											</ul>
+										</aside>
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>eventName: <span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li>
+												<h5>cb: <span class="tsd-signature-type">function</span></h5>
+												<ul class="tsd-parameters">
+													<li class="tsd-parameter-siganture">
+														<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+															<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+														</ul>
+														<ul class="tsd-descriptions">
+															<li class="tsd-description">
+																<h4 class="tsd-parameters-title">Parameters</h4>
+																<ul class="tsd-parameters">
+																	<li>
+																		<h5>event: <span class="tsd-signature-type">any</span></h5>
+																	</li>
+																</ul>
+																<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+									</li>
+							</ul>        </li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="type" class="tsd-anchor"></a>
+					<h3>type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/tcp-server/tcp-server.ts#L40">tcp-server/tcp-server.ts:40</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="getapisettingsformdata" class="tsd-anchor"></a>
-					<h3>get<wbr>Api<wbr>Settings<wbr>Form<wbr>Data</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Api<wbr>Settings<wbr>Form<wbr>Data<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_settings_settings_api_.isettingssubcategory.html" class="tsd-signature-type">ISettingsSubCategory</a><span class="tsd-signature-symbol">[]</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="close" class="tsd-anchor"></a>
+					<h3>close</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">close<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/tcp-server.ts#L56">tcp-server.ts:56</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="_settings_settings_api_.isettingssubcategory.html" class="tsd-signature-type">ISettingsSubCategory</a><span class="tsd-signature-symbol">[]</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="getdefaultsettings" class="tsd-anchor"></a>
-					<h3>get<wbr>Default<wbr>Settings</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Default<wbr>Settings<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_tcp_server_.itcpserverssettings.html" class="tsd-signature-type">ITcpServersSettings</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/tcp-server.ts#L58">tcp-server.ts:58</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="_tcp_server_.itcpserverssettings.html" class="tsd-signature-type">ITcpServersSettings</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="listen" class="tsd-anchor"></a>
-					<h3>listen</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">listen<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/tcp-server.ts#L59">tcp-server.ts:59</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="setsettings" class="tsd-anchor"></a>
-					<h3>set<wbr>Settings</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Settings<span class="tsd-signature-symbol">(</span>settings<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="_tcp_server_.itcpserverssettings.html" class="tsd-signature-type">ITcpServersSettings</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/tcp-server.ts#L57">tcp-server.ts:57</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>settings: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="_tcp_server_.itcpserverssettings.html" class="tsd-signature-type">ITcpServersSettings</a><span class="tsd-signature-symbol">&gt;</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="stoplistening" class="tsd-anchor"></a>
-					<h3>stop<wbr>Listening</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">stop<wbr>Listening<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/cf89cfa/app/services/tcp-server.ts#L60">tcp-server.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/tcp-server/tcp-server.ts#L44">tcp-server/tcp-server.ts:44</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -207,59 +200,47 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_tcp_server_.html">"tcp-<wbr>server"</a>
+						<a href="../modules/_tcp_server_tcp_server_.html">"tcp-<wbr>server/tcp-<wbr>server"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_tcp_server_.tcpserverservice.html" class="tsd-kind-icon">Tcp<wbr>Server<wbr>Service</a>
+						<a href="../classes/_tcp_server_tcp_server_.tcpserverservice.html" class="tsd-kind-icon">Tcp<wbr>Server<wbr>Service</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_tcp_server_.iclient.html" class="tsd-kind-icon">IClient</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_tcp_server_.iserver.html" class="tsd-kind-icon">IServer</a>
+						<a href="_tcp_server_tcp_server_.iclient.html" class="tsd-kind-icon">IClient</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_tcp_server_.itcpserverserviceapi.html" class="tsd-kind-icon">ITcp<wbr>Server<wbr>ServiceAPI</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_tcp_server_tcp_server_.iserver.html" class="tsd-kind-icon">IServer</a>
 						<ul>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_tcp_server_.itcpserverserviceapi.html#getapisettingsformdata" class="tsd-kind-icon">get<wbr>Api<wbr>Settings<wbr>Form<wbr>Data</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_tcp_server_tcp_server_.iserver.html#nativeserver" class="tsd-kind-icon">native<wbr>Server</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_tcp_server_.itcpserverserviceapi.html#getdefaultsettings" class="tsd-kind-icon">get<wbr>Default<wbr>Settings</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_tcp_server_tcp_server_.iserver.html#type" class="tsd-kind-icon">type</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_tcp_server_.itcpserverserviceapi.html#listen" class="tsd-kind-icon">listen</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_tcp_server_.itcpserverserviceapi.html#setsettings" class="tsd-kind-icon">set<wbr>Settings</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_tcp_server_.itcpserverserviceapi.html#stoplistening" class="tsd-kind-icon">stop<wbr>Listening</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_tcp_server_tcp_server_.iserver.html#close" class="tsd-kind-icon">close</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_tcp_server_.itcpserverssettings.html" class="tsd-kind-icon">ITcp<wbr>Servers<wbr>Settings</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_tcp_server_tcp_server_.html#local_host_name" class="tsd-kind-icon">LOCAL_<wbr>HOST_<wbr>NAME</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_tcp_server_.html#local_host_name" class="tsd-kind-icon">LOCAL_<wbr>HOST_<wbr>NAME</a>
+						<a href="../modules/_tcp_server_tcp_server_.html#tcp_port" class="tsd-kind-icon">TCP_<wbr>PORT</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_tcp_server_.html#tcp_port" class="tsd-kind-icon">TCP_<wbr>PORT</a>
+						<a href="../modules/_tcp_server_tcp_server_.html#wildcard_host_name" class="tsd-kind-icon">WILDCARD_<wbr>HOST_<wbr>NAME</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_tcp_server_.html#wildcard_host_name" class="tsd-kind-icon">WILDCARD_<wbr>HOST_<wbr>NAME</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_tcp_server_.html#net" class="tsd-kind-icon">net</a>
+						<a href="../modules/_tcp_server_tcp_server_.html#net" class="tsd-kind-icon">net</a>
 					</li>
 				</ul>
 			</nav>
