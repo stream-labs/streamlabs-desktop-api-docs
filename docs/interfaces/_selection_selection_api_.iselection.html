@@ -74,6 +74,22 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Allows call bulk actions with scene items and folders.
+						Selection can contain items only for one scene.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>see</dt>
+						<dd><p>Scene.getSelection() to fetch a selection object</p>
+						</dd>
+						<dt>see</dt>
+						<dd><p>SelectionService to make items active</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-implemented-by">
 				<h3>Implemented by</h3>
 				<ul class="tsd-hierarchy">
@@ -157,9 +173,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/selection/selection-api.ts#L16">selection/selection-api.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/selection/selection-api.ts#L26">selection/selection-api.ts:26</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Add items to current selection</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -181,7 +202,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_scenes_scenes_api_.isceneitemactions.html">ISceneItemActions</a>.<a href="_scenes_scenes_api_.isceneitemactions.html#centeronscreen">centerOnScreen</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/scenes/scenes-api.ts#L134">scenes/scenes-api.ts:134</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/scenes/scenes-api.ts#L134">scenes/scenes-api.ts:134</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -198,9 +219,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/selection/selection-api.ts#L22">selection/selection-api.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/selection/selection-api.ts#L53">selection/selection-api.ts:53</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns duplicated Selection</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_selection_selection_api_.iselection.html" class="tsd-signature-type">ISelection</a></h4>
 						</li>
 					</ul>
@@ -215,9 +241,20 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/selection/selection-api.ts#L37">selection/selection-api.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/selection/selection-api.ts#L126">selection/selection-api.ts:126</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Copy selected item and folders to specific scene or folder. The sources will not be duplicated.
+									For sources duplication use <code>.copyTo()</code> method.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>see</dt>
+									<dd><p>ISelection.copyTo()</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -241,9 +278,20 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/selection/selection-api.ts#L36">selection/selection-api.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/selection/selection-api.ts#L119">selection/selection-api.ts:119</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Copy selected items to any scene. The sources for each item will be also duplicated.
+									For the most cases use <code>.copyReferenceTo()</code> to avoid sources duplication.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>see</dt>
+									<dd><p>ISelection.copyReferenceTo()</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -264,9 +312,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/selection/selection-api.ts#L18">selection/selection-api.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/selection/selection-api.ts#L34">selection/selection-api.ts:34</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Deselect items</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -288,7 +341,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_scenes_scenes_api_.isceneitemactions.html">ISceneItemActions</a>.<a href="_scenes_scenes_api_.isceneitemactions.html#fittoscreen">fitToScreen</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/scenes/scenes-api.ts#L133">scenes/scenes-api.ts:133</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/scenes/scenes-api.ts#L133">scenes/scenes-api.ts:133</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -306,7 +359,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_scenes_scenes_api_.isceneitemactions.html">ISceneItemActions</a>.<a href="_scenes_scenes_api_.isceneitemactions.html#flipx">flipX</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/scenes/scenes-api.ts#L130">scenes/scenes-api.ts:130</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/scenes/scenes-api.ts#L130">scenes/scenes-api.ts:130</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -324,7 +377,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_scenes_scenes_api_.isceneitemactions.html">ISceneItemActions</a>.<a href="_scenes_scenes_api_.isceneitemactions.html#flipy">flipY</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/scenes/scenes-api.ts#L131">scenes/scenes-api.ts:131</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/scenes/scenes-api.ts#L131">scenes/scenes-api.ts:131</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -341,9 +394,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/selection/selection-api.ts#L29">selection/selection-api.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/selection/selection-api.ts#L86">selection/selection-api.ts:86</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a minimal bounding rectangle for selected items.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IRectangle</span></h4>
 						</li>
 					</ul>
@@ -358,9 +416,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/selection/selection-api.ts#L24">selection/selection-api.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/selection/selection-api.ts#L61">selection/selection-api.ts:61</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns all selected scene folders</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_scenes_scenes_api_.isceneitemfolderapi.html" class="tsd-signature-type">ISceneItemFolderApi</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
@@ -375,9 +438,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/selection/selection-api.ts#L26">selection/selection-api.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/selection/selection-api.ts#L71">selection/selection-api.ts:71</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the list of selected folders and items ids</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
@@ -392,9 +460,20 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/selection/selection-api.ts#L28">selection/selection-api.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/selection/selection-api.ts#L81">selection/selection-api.ts:81</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the inverted selection. The current object will not change.
+									To change the current object use <code>.invert()</code></p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>see</dt>
+									<dd><p>ISelection.invert()</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_scenes_scenes_api_.html#tscenenodeapi" class="tsd-signature-type">TSceneNodeApi</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
@@ -409,9 +488,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/selection/selection-api.ts#L27">selection/selection-api.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/selection/selection-api.ts#L75">selection/selection-api.ts:75</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the inverted list of selected folders and items ids</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
@@ -426,9 +510,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/selection/selection-api.ts#L23">selection/selection-api.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/selection/selection-api.ts#L57">selection/selection-api.ts:57</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns all selected scene items</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_scenes_scenes_api_.isceneitemapi.html" class="tsd-signature-type">ISceneItemApi</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
@@ -437,16 +526,21 @@
 					<a name="getlastselected" class="tsd-anchor"></a>
 					<h3>get<wbr>Last<wbr>Selected</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Last<wbr>Selected<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_scenes_scenes_api_.isceneitemapi.html" class="tsd-signature-type">ISceneItemApi</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Last<wbr>Selected<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_scenes_scenes_api_.html#tscenenodeapi" class="tsd-signature-type">TSceneNodeApi</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/selection/selection-api.ts#L30">selection/selection-api.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/selection/selection-api.ts#L91">selection/selection-api.ts:91</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="_scenes_scenes_api_.isceneitemapi.html" class="tsd-signature-type">ISceneItemApi</a></h4>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the last item or folder added to selection</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_scenes_scenes_api_.html#tscenenodeapi" class="tsd-signature-type">TSceneNodeApi</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -460,9 +554,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/selection/selection-api.ts#L31">selection/selection-api.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/selection/selection-api.ts#L95">selection/selection-api.ts:95</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the id of the last item or folder added to selection</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
@@ -477,9 +576,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/selection/selection-api.ts#L32">selection/selection-api.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/selection/selection-api.ts#L100">selection/selection-api.ts:100</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the selection size</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
@@ -494,9 +598,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/selection/selection-api.ts#L25">selection/selection-api.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/selection/selection-api.ts#L66">selection/selection-api.ts:66</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A visual item is visible in the editor and not locked</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_scenes_scenes_api_.isceneitemapi.html" class="tsd-signature-type">ISceneItemApi</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
@@ -511,9 +620,20 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/selection/selection-api.ts#L20">selection/selection-api.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/selection/selection-api.ts#L44">selection/selection-api.ts:44</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Invert current selection.
+									If you need to get an inverted selection without changing the current object use <code>.getInverted()</code></p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>see</dt>
+									<dd><p>ISelection.getInverted()</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_selection_selection_api_.iselection.html" class="tsd-signature-type">ISelection</a></h4>
 						</li>
 					</ul>
@@ -528,9 +648,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/selection/selection-api.ts#L35">selection/selection-api.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/selection/selection-api.ts#L112">selection/selection-api.ts:112</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns true if selection contains a single scene folder</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
@@ -545,9 +670,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/selection/selection-api.ts#L34">selection/selection-api.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/selection/selection-api.ts#L108">selection/selection-api.ts:108</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns true if selection contains a single scene item</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
@@ -556,19 +686,24 @@
 					<a name="isselected" class="tsd-anchor"></a>
 					<h3>is<wbr>Selected</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Selected<span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="_scenes_scenes_api_.isceneitem.html" class="tsd-signature-type">ISceneItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Selected<span class="tsd-signature-symbol">(</span>nodeOrNodeId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../modules/_scenes_scenes_api_.html#tscenenodemodel" class="tsd-signature-type">TSceneNodeModel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/selection/selection-api.ts#L33">selection/selection-api.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/selection/selection-api.ts#L104">selection/selection-api.ts:104</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check the item is selected</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>item: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="_scenes_scenes_api_.isceneitem.html" class="tsd-signature-type">ISceneItem</a></h5>
+									<h5>nodeOrNodeId: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../modules/_scenes_scenes_api_.html#tscenenodemodel" class="tsd-signature-type">TSceneNodeModel</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -585,9 +720,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/selection/selection-api.ts#L38">selection/selection-api.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/selection/selection-api.ts#L131">selection/selection-api.ts:131</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Do the same as <code>.copyReferenceTo()</code> and remove copied items</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -612,7 +752,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_scenes_scenes_api_.isceneitemactions.html">ISceneItemActions</a>.<a href="_scenes_scenes_api_.isceneitemactions.html#remove">remove</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/scenes/scenes-api.ts#L136">scenes/scenes-api.ts:136</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/scenes/scenes-api.ts#L136">scenes/scenes-api.ts:136</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -629,9 +769,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/selection/selection-api.ts#L19">selection/selection-api.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/selection/selection-api.ts#L38">selection/selection-api.ts:38</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Reset current selection</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_selection_selection_api_.iselection.html" class="tsd-signature-type">ISelection</a></h4>
 						</li>
 					</ul>
@@ -647,7 +792,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_scenes_scenes_api_.isceneitemactions.html">ISceneItemActions</a>.<a href="_scenes_scenes_api_.isceneitemactions.html#resettransform">resetTransform</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/scenes/scenes-api.ts#L129">scenes/scenes-api.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/scenes/scenes-api.ts#L129">scenes/scenes-api.ts:129</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -665,7 +810,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_scenes_scenes_api_.isceneitemactions.html">ISceneItemActions</a>.<a href="_scenes_scenes_api_.isceneitemactions.html#rotate">rotate</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/scenes/scenes-api.ts#L135">scenes/scenes-api.ts:135</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/scenes/scenes-api.ts#L135">scenes/scenes-api.ts:135</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -688,9 +833,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/selection/selection-api.ts#L17">selection/selection-api.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/selection/selection-api.ts#L30">selection/selection-api.ts:30</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Select items. Previous selected items will be unselected</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -711,9 +861,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/selection/selection-api.ts#L21">selection/selection-api.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/selection/selection-api.ts#L48">selection/selection-api.ts:48</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Select the all items from the scene</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_selection_selection_api_.iselection.html" class="tsd-signature-type">ISelection</a></h4>
 						</li>
 					</ul>
@@ -729,7 +884,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_scenes_scenes_api_.isceneitemactions.html">ISceneItemActions</a>.<a href="_scenes_scenes_api_.isceneitemactions.html#setcontentcrop">setContentCrop</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/scenes/scenes-api.ts#L141">scenes/scenes-api.ts:141</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/scenes/scenes-api.ts#L141">scenes/scenes-api.ts:141</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -752,7 +907,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_scenes_scenes_api_.isceneitemactions.html">ISceneItemActions</a>.<a href="_scenes_scenes_api_.isceneitemactions.html#setsettings">setSettings</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/scenes/scenes-api.ts#L126">scenes/scenes-api.ts:126</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/scenes/scenes-api.ts#L126">scenes/scenes-api.ts:126</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -776,7 +931,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_scenes_scenes_api_.isceneitemactions.html">ISceneItemActions</a>.<a href="_scenes_scenes_api_.isceneitemactions.html#settransform">setTransform</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/scenes/scenes-api.ts#L128">scenes/scenes-api.ts:128</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/scenes/scenes-api.ts#L128">scenes/scenes-api.ts:128</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -800,7 +955,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_scenes_scenes_api_.isceneitemactions.html">ISceneItemActions</a>.<a href="_scenes_scenes_api_.isceneitemactions.html#setvisibility">setVisibility</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/scenes/scenes-api.ts#L127">scenes/scenes-api.ts:127</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/scenes/scenes-api.ts#L127">scenes/scenes-api.ts:127</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -824,7 +979,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_scenes_scenes_api_.isceneitemactions.html">ISceneItemActions</a>.<a href="_scenes_scenes_api_.isceneitemactions.html#stretchtoscreen">stretchToScreen</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/3ea707c/app/services/scenes/scenes-api.ts#L132">scenes/scenes-api.ts:132</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/db86e34/app/services/scenes/scenes-api.ts#L132">scenes/scenes-api.ts:132</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
