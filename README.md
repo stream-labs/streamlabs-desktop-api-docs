@@ -5,16 +5,14 @@
 
 [GOTO DOCUMENTATION PAGES](https://stream-labs.github.io/streamlabs-obs-api-docs/docs/index.html)
 
-This repo also includes a simple web-interface for [Streamlabs-OBS](https://github.com/stream-labs/streamlabs-obs) that you can use as an example to start to work with API. This web-interface demonstrates some basic features like shitching between scenes, show/hide, mute/unmute sources.
+This repo also includes a simple web-interface for [Streamlabs-OBS](https://github.com/stream-labs/streamlabs-obs) that you can use as an example to start working with the API. This web-interface demonstrates some basic features like snitching between scenes, show/hide, mute/unmute sources.
  
  [Launch web-interface](https://stream-labs.github.io/streamlabs-obs-api-docs)
 
 ![Screenshoot1](https://raw.githubusercontent.com/stream-labs/streamlabs-obs-api-docs/master/screenshots/screen1.png)
 
 # How to connect web-application to Streamlabs-OBS
-
-* run Streamlabs-OBS with `--adv-settings` parameter
-* enable websokets in `settings->API`
+* Remote connections are disabled by default. To enable it go to `Settings->Remote Control` and click on the QR-Code
 * [Launch web-interface](https://stream-labs.github.io/streamlabs-obs-api-docs)
 * click `connect` button on the top of the page
 
@@ -22,7 +20,7 @@ This repo also includes a simple web-interface for [Streamlabs-OBS](https://gith
 The web-interface also includes a simple console for testing direct API requests
 ![Screenshoot1](https://raw.githubusercontent.com/stream-labs/streamlabs-obs-api-docs/master/screenshots/screen2.png)
 
-# How to run web-application on the local machine
+# How to run this app on the local machine
 * clone the repo
 * install the web-interface application via `npm install`
 * run `npm start` to start simple HTTP server
