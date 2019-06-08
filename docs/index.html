@@ -88,8 +88,7 @@
     <span class="hljs-attr">"params"</span>: {
         <span class="hljs-attr">"resource"</span>: <span class="hljs-string">"ScenesService"</span>
     }
-}
-</code></pre><h3 id="response">Response</h3>
+}</code></pre><h3 id="response">Response</h3>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">1</span>,
@@ -109,13 +108,12 @@
             <span class="hljs-attr">"activeItemIds"</span>: []
         }
     ]
-}
-</code></pre><p>The property <code>&quot;_type&quot;: &quot;HELPER&quot;</code> means that you can fetch some
+}</code></pre><p>The property <code>&quot;_type&quot;: &quot;HELPER&quot;</code> means that you can fetch some
 					additional information by calling methods on this object. To do
 					that, just include the <code>resourceId</code> from the response to <code>resource</code>
 				in the new request.</p>
 				<h2 id="get-items-in-a-scene">Get items in a scene</h2>
-				<h3 id="request">Request</h3>
+				<h3 id="request-1">Request</h3>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
@@ -124,8 +122,7 @@
         <span class="hljs-attr">"resource"</span>: <span class="hljs-string">"Scene[\"3efd436e5546\"]"</span>,
         <span class="hljs-attr">"args"</span>: []
     }
-}
-</code></pre><h3 id="response">Response</h3>
+}</code></pre><h3 id="response-1">Response</h3>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
@@ -145,10 +142,9 @@
             <span class="hljs-attr">"locked"</span>: <span class="hljs-literal">false</span>
         }
     ]
-}
-</code></pre><h2 id="event-subscriptions">Event subscriptions</h2>
+}</code></pre><h2 id="event-subscriptions">Event subscriptions</h2>
 				<p>Subscribe to the <code>sceneSwitched</code> event:</p>
-				<h3 id="request">Request</h3>
+				<h3 id="request-2">Request</h3>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">3</span>,
@@ -157,8 +153,7 @@
         <span class="hljs-attr">"resource"</span>: <span class="hljs-string">"ScenesService"</span>,
         <span class="hljs-attr">"args"</span>: []
     }
-}
-</code></pre><h3 id="response">Response</h3>
+}</code></pre><h3 id="response-2">Response</h3>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">4</span>,
@@ -167,8 +162,7 @@
         <span class="hljs-attr">"resourceId"</span>: <span class="hljs-string">"ScenesService.sceneSwitched"</span>,
         <span class="hljs-attr">"emitter"</span>: <span class="hljs-string">"STREAM"</span>
     }
-}
-</code></pre><p>After subscribing, you will receive events when the user
+}</code></pre><p>After subscribing, you will receive events when the user
 				switches between scenes:</p>
 				<h3 id="event">Event</h3>
 				<pre><code>{
@@ -183,9 +177,8 @@
             <span class="hljs-attr">"activeItemIds"</span>: []
         }
     }
-}
-</code></pre><p>Use <code>resourceId</code> to unsubscribe:</p>
-				<h3 id="request">Request</h3>
+}</code></pre><p>Use <code>resourceId</code> to unsubscribe:</p>
+				<h3 id="request-3">Request</h3>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">5</span>,
@@ -193,8 +186,7 @@
     <span class="hljs-attr">"params"</span>: {
         <span class="hljs-attr">"resource"</span>: <span class="hljs-string">"ScenesService.sceneSwitched"</span>,
     }
-}
-</code></pre><h2 id="asynchronous-task-execution">Asynchronous Task Execution</h2>
+}</code></pre><h2 id="asynchronous-task-execution">Asynchronous Task Execution</h2>
 				<p>Some service methods are asynchronous and return a Javascript promise.
 					This is exposed via the API by returning a subscription that will
 					fire a single event.  You can think of the subscription response as
@@ -205,7 +197,7 @@
 					application consuming the API should probably not block waiting for a
 					response.  Functions that return a promise do not guarantee fast
 				execution.</p>
-				<h3 id="request">Request</h3>
+				<h3 id="request-4">Request</h3>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">5</span>,
@@ -214,8 +206,7 @@
         <span class="hljs-attr">"resource"</span>: <span class="hljs-string">"AppService"</span>,
         <span class="hljs-attr">"args"</span>: [<span class="hljs-string">"MyScenes"</span>]
     }
-}
-</code></pre><h3 id="response">Response</h3>
+}</code></pre><h3 id="response-3">Response</h3>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">5</span>,
@@ -224,8 +215,7 @@
         <span class="hljs-attr">"resourceId"</span>: <span class="hljs-string">"5c3cf84f797a"</span>,
         <span class="hljs-attr">"emitter"</span>: <span class="hljs-string">"PROMISE"</span>
     }
-}
-</code></pre><h3 id="event">Event</h3>
+}</code></pre><h3 id="event-1">Event</h3>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"result"</span>: {
@@ -235,12 +225,11 @@
         <span class="hljs-attr">"data"</span>: {},
         <span class="hljs-attr">"isRejected"</span>: <span class="hljs-literal">false</span>
     }
-}
-</code></pre><h2 id="reducing-response-body">Reducing response body</h2>
+}</code></pre><h2 id="reducing-response-body">Reducing response body</h2>
 				<p>By default if the response returns resources with <code>&quot;_type&quot;: &quot;HELPER&quot;</code>,
 					Streamlabs-OBS will attach some data by calling <code>getModel()</code> method of resource.
 				To disable that behavior, use the <code>compactMode</code> parameter in JSON-RPC request:</p>
-				<h3 id="request">Request</h3>
+				<h3 id="request-5">Request</h3>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">6</span>,
@@ -250,8 +239,7 @@
         <span class="hljs-attr">"args"</span>: [],
         <span class="hljs-attr">"compactMode"</span>: <span class="hljs-literal">true</span>
     }
-}
-</code></pre><h3 id="response">Response</h3>
+}</code></pre><h3 id="response-4">Response</h3>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">6</span>,
@@ -269,13 +257,12 @@
             <span class="hljs-attr">"resourceId"</span>: <span class="hljs-string">"Source[\"5c3cf84f797c\"]"</span>,
         },
     }
-}
-</code></pre><h1 id="remote-connections">Remote connections</h1>
+}</code></pre><h1 id="remote-connections">Remote connections</h1>
 				<p>Streamlabs OBS allows remote connection via websokets protocol powered by <a href="https://github.com/sockjs">Sockjs</a>.
 					To enable remote connections run Streamlabs OBS with <code>--adv-settings</code> parameter, go to <code>Settings-&gt;API</code>,
 					enable Websokets and check <code>Allow Remote Connections</code>.
 				Use API token from this window to authorize you connection:</p>
-				<h3 id="request">Request</h3>
+				<h3 id="request-6">Request</h3>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">8</span>,
@@ -284,10 +271,9 @@
         <span class="hljs-attr">"resource"</span>: <span class="hljs-string">"TcpServerService"</span>,
         <span class="hljs-attr">"args"</span>: [<span class="hljs-string">"your_secret_token_here"</span>]
     }
-}
-</code></pre><p>Local connections to &#39;127.0.0.1&#39; don&#39;t require authorization.</p>
+}</code></pre><p>Local connections to &#39;127.0.0.1&#39; don&#39;t require authorization.</p>
 				<h1 id="faq">FAQ</h1>
-				<h2 id="what-is-the-difference-between-sources-and-sceneitems-">What is the difference between Sources and SceneItems?</h2>
+				<h2 id="what-is-the-difference-between-sources-and-sceneitems">What is the difference between Sources and SceneItems?</h2>
 				<p>One thing to keep in mind in OBS is that sources and scene items are different things.
 					A source exists outside the context of a scene. Muted is a property of a source.
 					A scene item is essentially an instance of a source in a scene.
@@ -296,7 +282,7 @@
 				So the same source can be visible in one scene and invisible in another for example.</p>
 				<h2 id="how-to-mute-a-source-">How to mute a source ?</h2>
 				<p>First get the list of audio sources for the current scene</p>
-				<h3 id="request">Request</h3>
+				<h3 id="request-7">Request</h3>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">7</span>,
@@ -304,8 +290,7 @@
     <span class="hljs-attr">"params"</span>: {
         <span class="hljs-attr">"resource"</span>: <span class="hljs-string">"AudioService"</span>
     }
-}
-</code></pre><h3 id="response">Response</h3>
+}</code></pre><h3 id="response-5">Response</h3>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">7</span>,
@@ -329,11 +314,10 @@
             <span class="hljs-attr">"id"</span>: <span class="hljs-string">"wasapi_input_capture_d497319b"</span>
         }
     ]
-}
-</code></pre><p>Usually the AudioSource with the name AuxAudioDevice1 is the microphone.
+}</code></pre><p>Usually the AudioSource with the name AuxAudioDevice1 is the microphone.
 					To mute it you have to call <code>IAudioSourceApi.setMuted(true)</code>.
 				Use <code>resourceId</code> as the reference to <code>IAudioSourceApi</code> instance: </p>
-				<h3 id="request">Request</h3>
+				<h3 id="request-8">Request</h3>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">7</span>,
@@ -342,10 +326,9 @@
         <span class="hljs-attr">"resource"</span>: <span class="hljs-string">"AudioSource[\"wasapi_input_capture_d497319b\"]"</span>,
         <span class="hljs-attr">"args"</span>: [<span class="hljs-literal">true</span>]
     }
-}
-</code></pre><h2 id="how-to-hide-show-a-scene-item-">How to hide/show a scene item?</h2>
+}</code></pre><h2 id="how-to-hideshow-a-scene-item">How to hide/show a scene item?</h2>
 				<p>First get the active scene</p>
-				<h3 id="request">Request</h3>
+				<h3 id="request-9">Request</h3>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">8</span>,
@@ -353,8 +336,7 @@
     <span class="hljs-attr">"params"</span>: {
         <span class="hljs-attr">"resource"</span>: <span class="hljs-string">"ScenesService"</span>
     }
-}
-</code></pre><h3 id="response">Response</h3>
+}</code></pre><h3 id="response-6">Response</h3>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">8</span>,
@@ -386,11 +368,10 @@
             }
         ]
     }
-}
-</code></pre><p>Lets hide the first scene item via <code>ISceneItemApi.setVisibility(false)</code> method.
+}</code></pre><p>Lets hide the first scene item via <code>ISceneItemApi.setVisibility(false)</code> method.
 					To do that you need a <code>resourceId</code> for this scene item.
 				Use <code>ISceneApi.getSceneItem(sceneItemId)</code>.</p>
-				<h3 id="request">Request</h3>
+				<h3 id="request-10">Request</h3>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">9</span>,
@@ -399,8 +380,7 @@
         <span class="hljs-attr">"resource"</span>: <span class="hljs-string">"Scene[\"scene_02da7db7\"]"</span>,
         <span class="hljs-attr">"args"</span>: [<span class="hljs-string">"b18ee2b0"</span>]
     }
-}
-</code></pre><h3 id="response">Response</h3>
+}</code></pre><h3 id="response-7">Response</h3>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">9</span>,
@@ -416,9 +396,8 @@
         },
         <span class="hljs-attr">"visible"</span>: <span class="hljs-literal">true</span>
     }
-}
-</code></pre><p>Now you have a <code>resourceId</code> for the <code>ISceneItemApi</code> instance and can use its methods including setVisibility.</p>
-				<h3 id="request">Request</h3>
+}</code></pre><p>Now you have a <code>resourceId</code> for the <code>ISceneItemApi</code> instance and can use its methods including setVisibility.</p>
+				<h3 id="request-11">Request</h3>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">10</span>,
@@ -427,10 +406,9 @@
         <span class="hljs-attr">"resource"</span>: <span class="hljs-string">"SceneItem[\"scene_02da7db7\",\"b18ee2b0-6ff7\",\"color_source_61221191\"]"</span>,
         <span class="hljs-attr">"args"</span>: [<span class="hljs-literal">false</span>]
     }
-}
-</code></pre><h1 id="how-to-switch-a-scene-collection-">How to switch a scene collection?</h1>
+}</code></pre><h1 id="how-to-switch-a-scene-collection">How to switch a scene collection?</h1>
 				<p>Use <code>SceneCollectionsService.collections</code> to find the id of the collection you want to load</p>
-				<h3 id="request">Request</h3>
+				<h3 id="request-12">Request</h3>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">11</span>,
@@ -439,9 +417,8 @@
         <span class="hljs-attr">"resource"</span>: <span class="hljs-string">"SceneCollectionsService"</span>,
         <span class="hljs-attr">"args"</span>: []
     }
-}
-</code></pre><p>Use <code>SceneCollectionsService.load</code> to load it</p>
-				<h3 id="request">Request</h3>
+}</code></pre><p>Use <code>SceneCollectionsService.load</code> to load it</p>
+				<h3 id="request-13">Request</h3>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">12</span>,
@@ -450,8 +427,7 @@
         <span class="hljs-attr">"resource"</span>: <span class="hljs-string">"SceneCollectionsService"</span>,
         <span class="hljs-attr">"args"</span>: [<span class="hljs-string">"d3165bf4-2690-426a-80a1-f3421658e04e"</span>]
     }
-}
-</code></pre>
+}</code></pre>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -461,82 +437,13 @@
 						<a href="globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_app_app_.html">"app/app"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_app_index_.html">"app/index"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
 						<a href="modules/_audio_audio_.html">"audio/audio"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_audio_audio_api_.html">"audio/audio-<wbr>api"</a>
+						<a href="modules/_audio_audio_source_.html">"audio/audio-<wbr>source"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_audio_index_.html">"audio/index"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_auto_config_continent_map_.html">"auto-<wbr>config/continent-<wbr>map"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_auto_config_index_.html">"auto-<wbr>config/index"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_cache_uploader_.html">"cache-<wbr>uploader"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_clipboard_clipboard_.html">"clipboard/clipboard"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_clipboard_clipboard_api_.html">"clipboard/clipboard-<wbr>api"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_clipboard_index_.html">"clipboard/index"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_customization_customization_.html">"customization/customization"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_customization_customization_api_.html">"customization/customization-<wbr>api"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_customization_index_.html">"customization/index"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_dismissables_.html">"dismissables"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_file_manager_.html">"file-<wbr>manager"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_font_library_.html">"font-<wbr>library"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_guest_api_.html">"guest-<wbr>api"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_hosts_.html">"hosts"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_hotkeys_.html">"hotkeys"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_ipc_server_.html">"ipc-<wbr>server"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_jsonrpc_index_.html">"jsonrpc/index"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_jsonrpc_jsonrpc_.html">"jsonrpc/jsonrpc"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_jsonrpc_jsonrpc_api_.html">"jsonrpc/jsonrpc-<wbr>api"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_key_listener_.html">"key-<wbr>listener"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_navigation_.html">"navigation"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_notifications_index_.html">"notifications/index"</a>
@@ -545,121 +452,13 @@
 						<a href="modules/_notifications_notifications_.html">"notifications/notifications"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_notifications_notifications_api_.html">"notifications/notifications-<wbr>api"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_obs_api_.html">"obs-<wbr>api"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_obs_importer_.html">"obs-<wbr>importer"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_onboarding_.html">"onboarding"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_patch_notes_index_.html">"patch-<wbr>notes/index"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_patch_notes_notes_.html">"patch-<wbr>notes/notes"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_performance_.html">"performance"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_performance_monitor_index_.html">"performance-<wbr>monitor/index"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_performance_monitor_performance_monitor_.html">"performance-<wbr>monitor/performance-<wbr>monitor"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_persistent_stateful_service_.html">"persistent-<wbr>stateful-<wbr>service"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_platforms_index_.html">"platforms/index"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_platforms_mixer_.html">"platforms/mixer"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_platforms_twitch_.html">"platforms/twitch"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_platforms_youtube_.html">"platforms/youtube"</a>
+						<a href="modules/_resources_.html">"resources"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_scene_collections_index_.html">"scene-<wbr>collections/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_scene_collections_nodes_array_node_.html">"scene-<wbr>collections/nodes/array-<wbr>node"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_scene_collections_nodes_hotkeys_.html">"scene-<wbr>collections/nodes/hotkeys"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_scene_collections_nodes_node_.html">"scene-<wbr>collections/nodes/node"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_scene_collections_nodes_overlays_image_.html">"scene-<wbr>collections/nodes/overlays/image"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_scene_collections_nodes_overlays_root_.html">"scene-<wbr>collections/nodes/overlays/root"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_scene_collections_nodes_overlays_scenes_.html">"scene-<wbr>collections/nodes/overlays/scenes"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_scene_collections_nodes_overlays_slots_.html">"scene-<wbr>collections/nodes/overlays/slots"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_scene_collections_nodes_overlays_streamlabel_.html">"scene-<wbr>collections/nodes/overlays/streamlabel"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_scene_collections_nodes_overlays_text_.html">"scene-<wbr>collections/nodes/overlays/text"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_scene_collections_nodes_overlays_video_.html">"scene-<wbr>collections/nodes/overlays/video"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_scene_collections_nodes_overlays_webcam_.html">"scene-<wbr>collections/nodes/overlays/webcam"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_scene_collections_nodes_overlays_widget_.html">"scene-<wbr>collections/nodes/overlays/widget"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_scene_collections_nodes_root_.html">"scene-<wbr>collections/nodes/root"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_scene_collections_nodes_scene_items_.html">"scene-<wbr>collections/nodes/scene-<wbr>items"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_scene_collections_nodes_scenes_.html">"scene-<wbr>collections/nodes/scenes"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_scene_collections_nodes_sources_.html">"scene-<wbr>collections/nodes/sources"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_scene_collections_nodes_transition_.html">"scene-<wbr>collections/nodes/transition"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_scene_collections_overlays_.html">"scene-<wbr>collections/overlays"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_scene_collections_parse_.html">"scene-<wbr>collections/parse"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
 						<a href="modules/_scene_collections_scene_collections_.html">"scene-<wbr>collections/scene-<wbr>collections"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_scene_collections_scene_collections_api_.html">"scene-<wbr>collections/scene-<wbr>collections-<wbr>api"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_scene_collections_server_api_.html">"scene-<wbr>collections/server-<wbr>api"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_scene_collections_state_.html">"scene-<wbr>collections/state"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_scenes_transitions_.html">"scenes-<wbr>transitions"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_scenes_index_.html">"scenes/index"</a>
@@ -668,10 +467,10 @@
 						<a href="modules/_scenes_scene_.html">"scenes/scene"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_scenes_scene_folder_.html">"scenes/scene-<wbr>folder"</a>
+						<a href="modules/_scenes_scene_item_.html">"scenes/scene-<wbr>item"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_scenes_scene_item_.html">"scenes/scene-<wbr>item"</a>
+						<a href="modules/_scenes_scene_item_folder_.html">"scenes/scene-<wbr>item-<wbr>folder"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_scenes_scene_node_.html">"scenes/scene-<wbr>node"</a>
@@ -680,7 +479,7 @@
 						<a href="modules/_scenes_scenes_.html">"scenes/scenes"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_scenes_scenes_api_.html">"scenes/scenes-<wbr>api"</a>
+						<a href="modules/_scenes_selection_.html">"scenes/selection"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_selection_index_.html">"selection/index"</a>
@@ -689,40 +488,7 @@
 						<a href="modules/_selection_selection_.html">"selection/selection"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_selection_selection_api_.html">"selection/selection-<wbr>api"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_service_.html">"service"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_settings_index_.html">"settings/index"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_settings_settings_.html">"settings/settings"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_settings_settings_api_.html">"settings/settings-<wbr>api"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_shortcuts_.html">"shortcuts"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_source_filters_.html">"source-<wbr>filters"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
 						<a href="modules/_sources_index_.html">"sources/index"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_sources_properties_managers_default_manager_.html">"sources/properties-<wbr>managers/default-<wbr>manager"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_sources_properties_managers_properties_manager_.html">"sources/properties-<wbr>managers/properties-<wbr>manager"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_sources_properties_managers_streamlabels_manager_.html">"sources/properties-<wbr>managers/streamlabels-<wbr>manager"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_sources_properties_managers_widget_manager_.html">"sources/properties-<wbr>managers/widget-<wbr>manager"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_sources_source_.html">"sources/source"</a>
@@ -731,70 +497,10 @@
 						<a href="modules/_sources_sources_.html">"sources/sources"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_sources_sources_api_.html">"sources/sources-<wbr>api"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_stateful_service_.html">"stateful-<wbr>service"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_stream_info_.html">"stream-<wbr>info"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
 						<a href="modules/_streaming_index_.html">"streaming/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_streaming_streaming_.html">"streaming/streaming"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_streaming_streaming_api_.html">"streaming/streaming-<wbr>api"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_streamlabels_definitions_.html">"streamlabels/definitions"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_streamlabels_index_.html">"streamlabels/index"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_tcp_server_index_.html">"tcp-<wbr>server/index"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_tcp_server_tcp_server_.html">"tcp-<wbr>server/tcp-<wbr>server"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_tcp_server_tcp_server_api_.html">"tcp-<wbr>server/tcp-<wbr>server-<wbr>api"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_troubleshooter_index_.html">"troubleshooter/index"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_troubleshooter_troubleshooter_.html">"troubleshooter/troubleshooter"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_troubleshooter_troubleshooter_api_.html">"troubleshooter/troubleshooter-<wbr>api"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_usage_statistics_.html">"usage-<wbr>statistics"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_user_.html">"user"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_utils_.html">"utils"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_video_.html">"video"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_video_encoding_optimizations_definitions_.html">"video-<wbr>encoding-<wbr>optimizations/definitions"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_video_encoding_optimizations_index_.html">"video-<wbr>encoding-<wbr>optimizations/index"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_widgets_.html">"widgets"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_windows_.html">"windows"</a>
 					</li>
 				</ul>
 			</nav>
