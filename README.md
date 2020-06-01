@@ -12,9 +12,11 @@ This repo also includes a simple web-interface for [Streamlabs-OBS](https://gith
 ![Screenshoot1](https://raw.githubusercontent.com/stream-labs/streamlabs-obs-api-docs/master/screenshots/screen1.png)
 
 # How to connect web-application to Streamlabs-OBS
-* Remote connections are disabled by default. To enable it go to `Settings->Remote Control` and click on the QR-Code
+* Remote connections are disabled by default. To enable it go to `Settings->Remote Control` and click on the QR-Code and than on `show details`
+* copy the token
 * [Launch web-interface](https://stream-labs.github.io/streamlabs-obs-api-docs)
-* click `connect` button on the top of the page
+* inset your token in the `token` field on the top of the page
+* click the `connect` button 
 
 
 The web-interface also includes a simple console for testing direct API requests

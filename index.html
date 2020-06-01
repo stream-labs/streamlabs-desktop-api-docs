@@ -17,12 +17,15 @@
   <div v-if="topPanelIsVisible">
     <div class="header">
       <div class="input-group">
-        <input type="text" class="form-control" placeholder="url" v-model="url">
-        <span  class="input-group-addon">
-        <span v-if="connectionStatus == 'disconnected'" @click="connect">Connect</span>
-        <span v-if="connectionStatus == 'pending'">Connecting...</span>
-        <span v-if="connectionStatus == 'connected'" style="color: green">Connected</span>
-      </span>
+        <input type="text" class="form-control" plaeholder="url" v-model="url">
+          <span  class="input-group-addon">
+          <span v-if="connectionStatus == 'disconnected'" @click="connect">Connect</span>
+          <span v-if="connectionStatus == 'pending'">Connecting...</span>
+          <span v-if="connectionStatus == 'connected'" style="color: green">Connected</span>
+        </span>
+      </div>
+      <div class="input-group">
+        <input type="password" class="form-control" placeholder="token" v-model="token">
       </div>
     </div>
 
@@ -121,6 +124,7 @@
     el: '#app',
     data: {
       connectionStatus: 'disconnected',
+      token: '',
       url: `http://127.0.0.1:${PORT}/api`, //`http://${location.hostname}:${PORT}/api`,
       scenes: [],
       audioSources: [],
@@ -146,7 +150,12 @@
 
         this.socket.onopen = () => {
           console.log('open');
-          this.onConnectionHandler();
+          // send token for auth
+          this.request('TcpServerService', 'auth', this.token).then(() => {
+            this.onConnectionHandler();
+          }).catch(e => {
+            alert(e.message);
+          })
         };
 
         this.socket.onmessage = (e) => {
@@ -419,6 +428,7 @@
 
   .header .input-group {
     width: 340px;
+    margin-right: 10px;
   }
 
   .connect-form {
