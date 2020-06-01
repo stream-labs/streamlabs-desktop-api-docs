@@ -61,7 +61,7 @@
 					<a href="globals.html">Globals</a>
 				</li>
 			</ul>
-			<h1> slobs-client</h1>
+			<h1>slobs-client</h1>
 		</div>
 	</div>
 </header>
@@ -69,7 +69,9 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<h1 id="api-reference">API reference</h1>
+				<a href="#api-reference" id="api-reference" style="color: inherit; text-decoration: none;">
+					<h1>API reference</h1>
+				</a>
 				<p>Streamlabs-OBS allows remote management of the application via
 					an RPC-based API. The API is split into several different services.
 					You can access services&#39; methods and properties by sending
@@ -78,9 +80,15 @@
 				<p>Individual JSON-RPC requests should be separated by a single newline
 					character <code>LF</code> ( ASCII code 10).  You should ensure that your JSON message does not
 				contain any newline characters. Use <code>\n</code> as replacement for new lines in JSON. </p>
-				<h1 id="examples">Examples</h1>
-				<h2 id="get-a-list-of-scenes">Get a list of scenes</h2>
-				<h3 id="request">Request</h3>
+				<a href="#examples" id="examples" style="color: inherit; text-decoration: none;">
+					<h1>Examples</h1>
+				</a>
+				<a href="#get-a-list-of-scenes" id="get-a-list-of-scenes" style="color: inherit; text-decoration: none;">
+					<h2>Get a list of scenes</h2>
+				</a>
+				<a href="#request" id="request" style="color: inherit; text-decoration: none;">
+					<h3>Request</h3>
+				</a>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">1</span>,
@@ -88,7 +96,10 @@
     <span class="hljs-attr">"params"</span>: {
         <span class="hljs-attr">"resource"</span>: <span class="hljs-string">"ScenesService"</span>
     }
-}</code></pre><h3 id="response">Response</h3>
+}</code></pre>
+				<a href="#response" id="response" style="color: inherit; text-decoration: none;">
+					<h3>Response</h3>
+				</a>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">1</span>,
@@ -112,8 +123,12 @@
 					additional information by calling methods on this object. To do
 					that, just include the <code>resourceId</code> from the response to <code>resource</code>
 				in the new request.</p>
-				<h2 id="get-items-in-a-scene">Get items in a scene</h2>
-				<h3 id="request-1">Request</h3>
+				<a href="#get-items-in-a-scene" id="get-items-in-a-scene" style="color: inherit; text-decoration: none;">
+					<h2>Get items in a scene</h2>
+				</a>
+				<a href="#request-1" id="request-1" style="color: inherit; text-decoration: none;">
+					<h3>Request</h3>
+				</a>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
@@ -122,7 +137,10 @@
         <span class="hljs-attr">"resource"</span>: <span class="hljs-string">"Scene[\"3efd436e5546\"]"</span>,
         <span class="hljs-attr">"args"</span>: []
     }
-}</code></pre><h3 id="response-1">Response</h3>
+}</code></pre>
+				<a href="#response-1" id="response-1" style="color: inherit; text-decoration: none;">
+					<h3>Response</h3>
+				</a>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
@@ -142,9 +160,14 @@
             <span class="hljs-attr">"locked"</span>: <span class="hljs-literal">false</span>
         }
     ]
-}</code></pre><h2 id="event-subscriptions">Event subscriptions</h2>
+}</code></pre>
+				<a href="#event-subscriptions" id="event-subscriptions" style="color: inherit; text-decoration: none;">
+					<h2>Event subscriptions</h2>
+				</a>
 				<p>Subscribe to the <code>sceneSwitched</code> event:</p>
-				<h3 id="request-2">Request</h3>
+				<a href="#request-2" id="request-2" style="color: inherit; text-decoration: none;">
+					<h3>Request</h3>
+				</a>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">3</span>,
@@ -153,7 +176,10 @@
         <span class="hljs-attr">"resource"</span>: <span class="hljs-string">"ScenesService"</span>,
         <span class="hljs-attr">"args"</span>: []
     }
-}</code></pre><h3 id="response-2">Response</h3>
+}</code></pre>
+				<a href="#response-2" id="response-2" style="color: inherit; text-decoration: none;">
+					<h3>Response</h3>
+				</a>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">4</span>,
@@ -164,7 +190,9 @@
     }
 }</code></pre><p>After subscribing, you will receive events when the user
 				switches between scenes:</p>
-				<h3 id="event">Event</h3>
+				<a href="#event" id="event" style="color: inherit; text-decoration: none;">
+					<h3>Event</h3>
+				</a>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"result"</span>: {
@@ -178,7 +206,9 @@
         }
     }
 }</code></pre><p>Use <code>resourceId</code> to unsubscribe:</p>
-				<h3 id="request-3">Request</h3>
+				<a href="#request-3" id="request-3" style="color: inherit; text-decoration: none;">
+					<h3>Request</h3>
+				</a>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">5</span>,
@@ -186,7 +216,10 @@
     <span class="hljs-attr">"params"</span>: {
         <span class="hljs-attr">"resource"</span>: <span class="hljs-string">"ScenesService.sceneSwitched"</span>,
     }
-}</code></pre><h2 id="asynchronous-task-execution">Asynchronous Task Execution</h2>
+}</code></pre>
+				<a href="#asynchronous-task-execution" id="asynchronous-task-execution" style="color: inherit; text-decoration: none;">
+					<h2>Asynchronous Task Execution</h2>
+				</a>
 				<p>Some service methods are asynchronous and return a Javascript promise.
 					This is exposed via the API by returning a subscription that will
 					fire a single event.  You can think of the subscription response as
@@ -197,7 +230,9 @@
 					application consuming the API should probably not block waiting for a
 					response.  Functions that return a promise do not guarantee fast
 				execution.</p>
-				<h3 id="request-4">Request</h3>
+				<a href="#request-4" id="request-4" style="color: inherit; text-decoration: none;">
+					<h3>Request</h3>
+				</a>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">5</span>,
@@ -206,7 +241,10 @@
         <span class="hljs-attr">"resource"</span>: <span class="hljs-string">"AppService"</span>,
         <span class="hljs-attr">"args"</span>: [<span class="hljs-string">"MyScenes"</span>]
     }
-}</code></pre><h3 id="response-3">Response</h3>
+}</code></pre>
+				<a href="#response-3" id="response-3" style="color: inherit; text-decoration: none;">
+					<h3>Response</h3>
+				</a>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">5</span>,
@@ -215,7 +253,10 @@
         <span class="hljs-attr">"resourceId"</span>: <span class="hljs-string">"5c3cf84f797a"</span>,
         <span class="hljs-attr">"emitter"</span>: <span class="hljs-string">"PROMISE"</span>
     }
-}</code></pre><h3 id="event-1">Event</h3>
+}</code></pre>
+				<a href="#event-1" id="event-1" style="color: inherit; text-decoration: none;">
+					<h3>Event</h3>
+				</a>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"result"</span>: {
@@ -225,11 +266,16 @@
         <span class="hljs-attr">"data"</span>: {},
         <span class="hljs-attr">"isRejected"</span>: <span class="hljs-literal">false</span>
     }
-}</code></pre><h2 id="reducing-response-body">Reducing response body</h2>
+}</code></pre>
+				<a href="#reducing-response-body" id="reducing-response-body" style="color: inherit; text-decoration: none;">
+					<h2>Reducing response body</h2>
+				</a>
 				<p>By default if the response returns resources with <code>&quot;_type&quot;: &quot;HELPER&quot;</code>,
 					Streamlabs-OBS will attach some data by calling <code>getModel()</code> method of resource.
 				To disable that behavior, use the <code>compactMode</code> parameter in JSON-RPC request:</p>
-				<h3 id="request-5">Request</h3>
+				<a href="#request-5" id="request-5" style="color: inherit; text-decoration: none;">
+					<h3>Request</h3>
+				</a>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">6</span>,
@@ -239,7 +285,10 @@
         <span class="hljs-attr">"args"</span>: [],
         <span class="hljs-attr">"compactMode"</span>: <span class="hljs-literal">true</span>
     }
-}</code></pre><h3 id="response-4">Response</h3>
+}</code></pre>
+				<a href="#response-4" id="response-4" style="color: inherit; text-decoration: none;">
+					<h3>Response</h3>
+				</a>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">6</span>,
@@ -257,12 +306,19 @@
             <span class="hljs-attr">"resourceId"</span>: <span class="hljs-string">"Source[\"5c3cf84f797c\"]"</span>,
         },
     }
-}</code></pre><h1 id="remote-connections">Remote connections</h1>
-				<p>Streamlabs OBS allows remote connection via websokets protocol powered by <a href="https://github.com/sockjs">Sockjs</a>.
-					To enable remote connections run Streamlabs OBS with <code>--adv-settings</code> parameter, go to <code>Settings-&gt;API</code>,
-					enable Websokets and check <code>Allow Remote Connections</code>.
-				Use API token from this window to authorize you connection:</p>
-				<h3 id="request-6">Request</h3>
+}</code></pre>
+				<a href="#remote-connections" id="remote-connections" style="color: inherit; text-decoration: none;">
+					<h1>Remote connections</h1>
+				</a>
+				<p>Streamlabs OBS allows remote connection via websockets protocol powered by <a href="https://github.com/sockjs">Sockjs</a>.
+					To enable remote connections go to <code>Settings-&gt;Remote Control</code> click on QR Code and click <code>show details</code>.
+					Copy the token and close the settings window.
+				SLOBS will start listening for new collections.</p>
+				<p>You should provide your token in your first request to the API.
+				This step is required for each new connection to websockets.</p>
+				<a href="#request-6" id="request-6" style="color: inherit; text-decoration: none;">
+					<h3>Request</h3>
+				</a>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">8</span>,
@@ -271,18 +327,26 @@
         <span class="hljs-attr">"resource"</span>: <span class="hljs-string">"TcpServerService"</span>,
         <span class="hljs-attr">"args"</span>: [<span class="hljs-string">"your_secret_token_here"</span>]
     }
-}</code></pre><p>Local connections to &#39;127.0.0.1&#39; don&#39;t require authorization.</p>
-				<h1 id="faq">FAQ</h1>
-				<h2 id="what-is-the-difference-between-sources-and-sceneitems">What is the difference between Sources and SceneItems?</h2>
+}</code></pre><p>You can find more settings if you start SLOBS with <code>--adv-settings</code> parameter and go to <code>Settings-&gt;Developer</code>.</p>
+				<a href="#faq" id="faq" style="color: inherit; text-decoration: none;">
+					<h1>FAQ</h1>
+				</a>
+				<a href="#what-is-the-difference-between-sources-and-sceneitems" id="what-is-the-difference-between-sources-and-sceneitems" style="color: inherit; text-decoration: none;">
+					<h2>What is the difference between Sources and SceneItems?</h2>
+				</a>
 				<p>One thing to keep in mind in OBS is that sources and scene items are different things.
 					A source exists outside the context of a scene. Muted is a property of a source.
 					A scene item is essentially an instance of a source in a scene.
 					The same underlying source can be in multiple scenes as a sceneitem.
 					Visibility is an attribute on a scene item.
 				So the same source can be visible in one scene and invisible in another for example.</p>
-				<h2 id="how-to-mute-a-source-">How to mute a source ?</h2>
+				<a href="#how-to-mute-a-source-" id="how-to-mute-a-source-" style="color: inherit; text-decoration: none;">
+					<h2>How to mute a source ?</h2>
+				</a>
 				<p>First get the list of audio sources for the current scene</p>
-				<h3 id="request-7">Request</h3>
+				<a href="#request-7" id="request-7" style="color: inherit; text-decoration: none;">
+					<h3>Request</h3>
+				</a>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">7</span>,
@@ -290,7 +354,10 @@
     <span class="hljs-attr">"params"</span>: {
         <span class="hljs-attr">"resource"</span>: <span class="hljs-string">"AudioService"</span>
     }
-}</code></pre><h3 id="response-5">Response</h3>
+}</code></pre>
+				<a href="#response-5" id="response-5" style="color: inherit; text-decoration: none;">
+					<h3>Response</h3>
+				</a>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">7</span>,
@@ -317,7 +384,9 @@
 }</code></pre><p>Usually the AudioSource with the name AuxAudioDevice1 is the microphone.
 					To mute it you have to call <code>IAudioSourceApi.setMuted(true)</code>.
 				Use <code>resourceId</code> as the reference to <code>IAudioSourceApi</code> instance: </p>
-				<h3 id="request-8">Request</h3>
+				<a href="#request-8" id="request-8" style="color: inherit; text-decoration: none;">
+					<h3>Request</h3>
+				</a>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">7</span>,
@@ -326,9 +395,14 @@
         <span class="hljs-attr">"resource"</span>: <span class="hljs-string">"AudioSource[\"wasapi_input_capture_d497319b\"]"</span>,
         <span class="hljs-attr">"args"</span>: [<span class="hljs-literal">true</span>]
     }
-}</code></pre><h2 id="how-to-hideshow-a-scene-item">How to hide/show a scene item?</h2>
+}</code></pre>
+				<a href="#how-to-hideshow-a-scene-item" id="how-to-hideshow-a-scene-item" style="color: inherit; text-decoration: none;">
+					<h2>How to hide/show a scene item?</h2>
+				</a>
 				<p>First get the active scene</p>
-				<h3 id="request-9">Request</h3>
+				<a href="#request-9" id="request-9" style="color: inherit; text-decoration: none;">
+					<h3>Request</h3>
+				</a>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">8</span>,
@@ -336,7 +410,10 @@
     <span class="hljs-attr">"params"</span>: {
         <span class="hljs-attr">"resource"</span>: <span class="hljs-string">"ScenesService"</span>
     }
-}</code></pre><h3 id="response-6">Response</h3>
+}</code></pre>
+				<a href="#response-6" id="response-6" style="color: inherit; text-decoration: none;">
+					<h3>Response</h3>
+				</a>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">8</span>,
@@ -371,7 +448,9 @@
 }</code></pre><p>Lets hide the first scene item via <code>ISceneItemApi.setVisibility(false)</code> method.
 					To do that you need a <code>resourceId</code> for this scene item.
 				Use <code>ISceneApi.getSceneItem(sceneItemId)</code>.</p>
-				<h3 id="request-10">Request</h3>
+				<a href="#request-10" id="request-10" style="color: inherit; text-decoration: none;">
+					<h3>Request</h3>
+				</a>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">9</span>,
@@ -380,7 +459,10 @@
         <span class="hljs-attr">"resource"</span>: <span class="hljs-string">"Scene[\"scene_02da7db7\"]"</span>,
         <span class="hljs-attr">"args"</span>: [<span class="hljs-string">"b18ee2b0"</span>]
     }
-}</code></pre><h3 id="response-7">Response</h3>
+}</code></pre>
+				<a href="#response-7" id="response-7" style="color: inherit; text-decoration: none;">
+					<h3>Response</h3>
+				</a>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">9</span>,
@@ -397,7 +479,9 @@
         <span class="hljs-attr">"visible"</span>: <span class="hljs-literal">true</span>
     }
 }</code></pre><p>Now you have a <code>resourceId</code> for the <code>ISceneItemApi</code> instance and can use its methods including setVisibility.</p>
-				<h3 id="request-11">Request</h3>
+				<a href="#request-11" id="request-11" style="color: inherit; text-decoration: none;">
+					<h3>Request</h3>
+				</a>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">10</span>,
@@ -406,9 +490,14 @@
         <span class="hljs-attr">"resource"</span>: <span class="hljs-string">"SceneItem[\"scene_02da7db7\",\"b18ee2b0-6ff7\",\"color_source_61221191\"]"</span>,
         <span class="hljs-attr">"args"</span>: [<span class="hljs-literal">false</span>]
     }
-}</code></pre><h1 id="how-to-switch-a-scene-collection">How to switch a scene collection?</h1>
+}</code></pre>
+				<a href="#how-to-switch-a-scene-collection" id="how-to-switch-a-scene-collection" style="color: inherit; text-decoration: none;">
+					<h1>How to switch a scene collection?</h1>
+				</a>
 				<p>Use <code>SceneCollectionsService.collections</code> to find the id of the collection you want to load</p>
-				<h3 id="request-12">Request</h3>
+				<a href="#request-12" id="request-12" style="color: inherit; text-decoration: none;">
+					<h3>Request</h3>
+				</a>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">11</span>,
@@ -418,7 +507,9 @@
         <span class="hljs-attr">"args"</span>: []
     }
 }</code></pre><p>Use <code>SceneCollectionsService.load</code> to load it</p>
-				<h3 id="request-13">Request</h3>
+				<a href="#request-13" id="request-13" style="color: inherit; text-decoration: none;">
+					<h3>Request</h3>
+				</a>
 				<pre><code>{
     <span class="hljs-attr">"jsonrpc"</span>: <span class="hljs-string">"2.0"</span>,
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">12</span>,
@@ -437,70 +528,82 @@
 						<a href="globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_audio_audio_.html">"audio/audio"</a>
+						<a href="modules/_audio_audio_.html">&quot;audio/audio&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_audio_audio_source_.html">"audio/audio-<wbr>source"</a>
+						<a href="modules/_audio_audio_source_.html">&quot;audio/audio-<wbr>source&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_audio_index_.html">"audio/index"</a>
+						<a href="modules/_audio_index_.html">&quot;audio/index&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_notifications_index_.html">"notifications/index"</a>
+						<a href="modules/_notifications_index_.html">&quot;notifications/index&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_notifications_notifications_.html">"notifications/notifications"</a>
+						<a href="modules/_notifications_notifications_.html">&quot;notifications/notifications&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_resources_.html">"resources"</a>
+						<a href="modules/_performance_index_.html">&quot;performance/index&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_scene_collections_index_.html">"scene-<wbr>collections/index"</a>
+						<a href="modules/_performance_performance_.html">&quot;performance/performance&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_scene_collections_scene_collections_.html">"scene-<wbr>collections/scene-<wbr>collections"</a>
+						<a href="modules/_resources_.html">&quot;resources&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_scenes_index_.html">"scenes/index"</a>
+						<a href="modules/_scene_collections_index_.html">&quot;scene-<wbr>collections/index&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_scenes_scene_.html">"scenes/scene"</a>
+						<a href="modules/_scene_collections_scene_collections_.html">&quot;scene-<wbr>collections/scene-<wbr>collections&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_scenes_scene_item_.html">"scenes/scene-<wbr>item"</a>
+						<a href="modules/_scenes_index_.html">&quot;scenes/index&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_scenes_scene_item_folder_.html">"scenes/scene-<wbr>item-<wbr>folder"</a>
+						<a href="modules/_scenes_scene_.html">&quot;scenes/scene&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_scenes_scene_node_.html">"scenes/scene-<wbr>node"</a>
+						<a href="modules/_scenes_scene_item_.html">&quot;scenes/scene-<wbr>item&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_scenes_scenes_.html">"scenes/scenes"</a>
+						<a href="modules/_scenes_scene_item_folder_.html">&quot;scenes/scene-<wbr>item-<wbr>folder&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_scenes_selection_.html">"scenes/selection"</a>
+						<a href="modules/_scenes_scene_node_.html">&quot;scenes/scene-<wbr>node&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_selection_index_.html">"selection/index"</a>
+						<a href="modules/_scenes_scenes_.html">&quot;scenes/scenes&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_selection_selection_.html">"selection/selection"</a>
+						<a href="modules/_scenes_selection_.html">&quot;scenes/selection&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_sources_index_.html">"sources/index"</a>
+						<a href="modules/_selection_index_.html">&quot;selection/index&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_sources_source_.html">"sources/source"</a>
+						<a href="modules/_selection_selection_.html">&quot;selection/selection&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_sources_sources_.html">"sources/sources"</a>
+						<a href="modules/_sources_index_.html">&quot;sources/index&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_streaming_index_.html">"streaming/index"</a>
+						<a href="modules/_sources_source_.html">&quot;sources/source&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_streaming_streaming_.html">"streaming/streaming"</a>
+						<a href="modules/_sources_sources_.html">&quot;sources/sources&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_streaming_index_.html">&quot;streaming/index&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_streaming_streaming_.html">&quot;streaming/streaming&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_transitions_index_.html">&quot;transitions/index&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_transitions_transitions_.html">&quot;transitions/transitions&quot;</a>
 					</li>
 				</ul>
 			</nav>
