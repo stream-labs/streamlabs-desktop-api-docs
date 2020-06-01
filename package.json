@@ -5,6 +5,8 @@
     "start": "http-server"
   },
   "dependencies": {
-    "http-server": "^0.10.0"
+    "http-server": "^0.12.3",
+    "sockjs-client": "^1.4.0",
+    "wscat": "^4.0.0"
   }
 }
