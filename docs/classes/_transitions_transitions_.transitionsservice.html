@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>AudioService | slobs-client</title>
+	<title>TransitionsService | slobs-client</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -61,13 +61,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_audio_audio_.html">&quot;audio/audio&quot;</a>
+					<a href="../modules/_transitions_transitions_.html">&quot;transitions/transitions&quot;</a>
 				</li>
 				<li>
-					<a href="_audio_audio_.audioservice.html">AudioService</a>
+					<a href="_transitions_transitions_.transitionsservice.html">TransitionsService</a>
 				</li>
 			</ul>
-			<h1>Class AudioService</h1>
+			<h1>Class TransitionsService</h1>
 		</div>
 	</div>
 </header>
@@ -77,7 +77,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Provides API for manage audio sources</p>
+						<p>Manage the studio mode transitions</p>
 					</div>
 				</div>
 			</section>
@@ -85,8 +85,14 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">AudioService</span>
+						<span class="target">TransitionsService</span>
 					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><span class="tsd-signature-type">ISerializable</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -94,96 +100,115 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_transitions_transitions_.transitionsservice.html#studiomodechanged" class="tsd-kind-icon">studio<wbr>Mode<wbr>Changed</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_audio_audio_.audioservice.html#getsource" class="tsd-kind-icon">get<wbr>Source</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_audio_audio_.audioservice.html#getsources" class="tsd-kind-icon">get<wbr>Sources</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_audio_audio_.audioservice.html#getsourcesforcurrentscene" class="tsd-kind-icon">get<wbr>Sources<wbr>For<wbr>Current<wbr>Scene</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_audio_audio_.audioservice.html#getsourcesforscene" class="tsd-kind-icon">get<wbr>Sources<wbr>For<wbr>Scene</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_transitions_transitions_.transitionsservice.html#disablestudiomode" class="tsd-kind-icon">disable<wbr>Studio<wbr>Mode</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_transitions_transitions_.transitionsservice.html#enablestudiomode" class="tsd-kind-icon">enable<wbr>Studio<wbr>Mode</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_transitions_transitions_.transitionsservice.html#executestudiomodetransition" class="tsd-kind-icon">execute<wbr>Studio<wbr>Mode<wbr>Transition</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_transitions_transitions_.transitionsservice.html#getmodel" class="tsd-kind-icon">get<wbr>Model</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="studiomodechanged" class="tsd-anchor"></a>
+					<h3>studio<wbr>Mode<wbr>Changed</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> studioModeChanged<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/25ee6d08d/app/services/api/external-api/transitions/transitions.ts#L20">transitions/transitions.ts:20</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getsource" class="tsd-anchor"></a>
-					<h3>get<wbr>Source</h3>
+					<a name="disablestudiomode" class="tsd-anchor"></a>
+					<h3>disable<wbr>Studio<wbr>Mode</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Source<span class="tsd-signature-symbol">(</span>sourceId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_audio_audio_source_.audiosource.html" class="tsd-signature-type">AudioSource</a></li>
+						<li class="tsd-signature tsd-kind-icon">disable<wbr>Studio<wbr>Mode<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/25ee6d08d/app/services/api/external-api/audio/audio.ts#L15">audio/audio.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/25ee6d08d/app/services/api/external-api/transitions/transitions.ts#L34">transitions/transitions.ts:34</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>sourceId: <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_audio_audio_source_.audiosource.html" class="tsd-signature-type">AudioSource</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getsources" class="tsd-anchor"></a>
-					<h3>get<wbr>Sources</h3>
+					<a name="enablestudiomode" class="tsd-anchor"></a>
+					<h3>enable<wbr>Studio<wbr>Mode</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Sources<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_audio_audio_source_.audiosource.html" class="tsd-signature-type">AudioSource</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">enable<wbr>Studio<wbr>Mode<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/25ee6d08d/app/services/api/external-api/audio/audio.ts#L20">audio/audio.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/25ee6d08d/app/services/api/external-api/transitions/transitions.ts#L30">transitions/transitions.ts:30</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="_audio_audio_source_.audiosource.html" class="tsd-signature-type">AudioSource</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getsourcesforcurrentscene" class="tsd-anchor"></a>
-					<h3>get<wbr>Sources<wbr>For<wbr>Current<wbr>Scene</h3>
+					<a name="executestudiomodetransition" class="tsd-anchor"></a>
+					<h3>execute<wbr>Studio<wbr>Mode<wbr>Transition</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Sources<wbr>For<wbr>Current<wbr>Scene<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_audio_audio_source_.audiosource.html" class="tsd-signature-type">AudioSource</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">execute<wbr>Studio<wbr>Mode<wbr>Transition<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/25ee6d08d/app/services/api/external-api/audio/audio.ts#L24">audio/audio.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/25ee6d08d/app/services/api/external-api/transitions/transitions.ts#L41">transitions/transitions.ts:41</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="_audio_audio_source_.audiosource.html" class="tsd-signature-type">AudioSource</a><span class="tsd-signature-symbol">[]</span></h4>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>While in studio mode, will execute a studio mode transition</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getsourcesforscene" class="tsd-anchor"></a>
-					<h3>get<wbr>Sources<wbr>For<wbr>Scene</h3>
+					<a name="getmodel" class="tsd-anchor"></a>
+					<h3>get<wbr>Model</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Sources<wbr>For<wbr>Scene<span class="tsd-signature-symbol">(</span>sceneId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_audio_audio_source_.audiosource.html" class="tsd-signature-type">AudioSource</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Model<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_transitions_transitions_.itransitionsservicestate.html" class="tsd-signature-type">ITransitionsServiceState</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/25ee6d08d/app/services/api/external-api/audio/audio.ts#L30">audio/audio.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/stream-labs/streamlabs-obs/blob/25ee6d08d/app/services/api/external-api/transitions/transitions.ts#L24">transitions/transitions.ts:24</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>sceneId: <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_audio_audio_source_.audiosource.html" class="tsd-signature-type">AudioSource</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_transitions_transitions_.itransitionsservicestate.html" class="tsd-signature-type">ITransitionsServiceState</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -196,7 +221,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_audio_audio_.html">&quot;audio/audio&quot;</a>
+						<a href="../modules/_transitions_transitions_.html">&quot;transitions/transitions&quot;</a>
 					</li>
 				</ul>
 			</nav>
@@ -205,24 +230,30 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_audio_audio_.audioservice.html" class="tsd-kind-icon">Audio<wbr>Service</a>
+						<a href="_transitions_transitions_.transitionsservice.html" class="tsd-kind-icon">Transitions<wbr>Service</a>
 						<ul>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_audio_audio_.audioservice.html#getsource" class="tsd-kind-icon">get<wbr>Source</a>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_transitions_transitions_.transitionsservice.html#studiomodechanged" class="tsd-kind-icon">studio<wbr>Mode<wbr>Changed</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_audio_audio_.audioservice.html#getsources" class="tsd-kind-icon">get<wbr>Sources</a>
+								<a href="_transitions_transitions_.transitionsservice.html#disablestudiomode" class="tsd-kind-icon">disable<wbr>Studio<wbr>Mode</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_audio_audio_.audioservice.html#getsourcesforcurrentscene" class="tsd-kind-icon">get<wbr>Sources<wbr>For<wbr>Current<wbr>Scene</a>
+								<a href="_transitions_transitions_.transitionsservice.html#enablestudiomode" class="tsd-kind-icon">enable<wbr>Studio<wbr>Mode</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_audio_audio_.audioservice.html#getsourcesforscene" class="tsd-kind-icon">get<wbr>Sources<wbr>For<wbr>Scene</a>
+								<a href="_transitions_transitions_.transitionsservice.html#executestudiomodetransition" class="tsd-kind-icon">execute<wbr>Studio<wbr>Mode<wbr>Transition</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_transitions_transitions_.transitionsservice.html#getmodel" class="tsd-kind-icon">get<wbr>Model</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_transitions_transitions_.itransitionsservicestate.html" class="tsd-kind-icon">ITransitions<wbr>Service<wbr>State</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
