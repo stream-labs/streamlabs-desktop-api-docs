@@ -72,7 +72,7 @@
 				<a href="#api-reference" id="api-reference" style="color: inherit; text-decoration: none;">
 					<h1>API reference</h1>
 				</a>
-				<p>Streamlabs-OBS allows remote management of the application via
+				<p>Streamlabs Desktop allows remote management of the application via
 					an RPC-based API. The API is split into several different services.
 					You can access services&#39; methods and properties by sending
 					<a href="http://www.jsonrpc.org/specification">JSON-RPC</a> messages to the
@@ -271,7 +271,7 @@
 					<h2>Reducing response body</h2>
 				</a>
 				<p>By default if the response returns resources with <code>&quot;_type&quot;: &quot;HELPER&quot;</code>,
-					Streamlabs-OBS will attach some data by calling <code>getModel()</code> method of resource.
+					Streamlabs Desktop will attach some data by calling <code>getModel()</code> method of resource.
 				To disable that behavior, use the <code>compactMode</code> parameter in JSON-RPC request:</p>
 				<a href="#request-5" id="request-5" style="color: inherit; text-decoration: none;">
 					<h3>Request</h3>
@@ -310,10 +310,10 @@
 				<a href="#remote-connections" id="remote-connections" style="color: inherit; text-decoration: none;">
 					<h1>Remote connections</h1>
 				</a>
-				<p>Streamlabs OBS allows remote connection via websockets protocol powered by <a href="https://github.com/sockjs">Sockjs</a>.
+				<p>Streamlabs Desktop allows remote connection via websockets protocol powered by <a href="https://github.com/sockjs">Sockjs</a>.
 					To enable remote connections go to <code>Settings-&gt;Remote Control</code> click on QR Code and click <code>show details</code>.
 					Copy the token and close the settings window.
-				SLOBS will start listening for new collections.</p>
+				Streamlabs Desktop will start listening for new collections.</p>
 				<p>You should provide your token in your first request to the API.
 				This step is required for each new connection to websockets.</p>
 				<a href="#request-6" id="request-6" style="color: inherit; text-decoration: none;">
@@ -327,14 +327,14 @@
         <span class="hljs-attr">"resource"</span>: <span class="hljs-string">"TcpServerService"</span>,
         <span class="hljs-attr">"args"</span>: [<span class="hljs-string">"your_secret_token_here"</span>]
     }
-}</code></pre><p>You can find more settings if you start SLOBS with <code>--adv-settings</code> parameter and go to <code>Settings-&gt;Developer</code>.</p>
+}</code></pre><p>You can find more settings if you start Streamlabs Desktop with <code>--adv-settings</code> parameter and go to <code>Settings-&gt;Developer</code>.</p>
 				<a href="#faq" id="faq" style="color: inherit; text-decoration: none;">
 					<h1>FAQ</h1>
 				</a>
 				<a href="#what-is-the-difference-between-sources-and-sceneitems" id="what-is-the-difference-between-sources-and-sceneitems" style="color: inherit; text-decoration: none;">
 					<h2>What is the difference between Sources and SceneItems?</h2>
 				</a>
-				<p>One thing to keep in mind in OBS is that sources and scene items are different things.
+				<p>One thing to keep in mind is that sources and scene items are different things.
 					A source exists outside the context of a scene. Muted is a property of a source.
 					A scene item is essentially an instance of a source in a scene.
 					The same underlying source can be in multiple scenes as a sceneitem.
