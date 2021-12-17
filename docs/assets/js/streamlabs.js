@@ -2,7 +2,7 @@
 
 $(() => {
 
-  var projectName = 'Streamlabs-OBS';
+  var projectName = 'Streamlabs Desktop';
   if (isHomePage()) document.querySelector('h1').innerHTML = projectName;
 
   // hide index
